@@ -1,0 +1,36 @@
+package com.qa.crm.tests;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.qa.crm.base.BaseTest;
+
+public class LoginPageTest extends BaseTest
+{
+	@Test
+	public void loginPageTitleTest()
+	{
+		String actualTitle = loginPage.getLoginPageTitle();
+		Assert.assertEquals(actualTitle, "Cogmento CRM");
+	}
+	
+	@Test
+	public void loginPageURLTest()
+	{
+		String actualUrl = loginPage.getCurrentUrl();
+		Assert.assertTrue(actualUrl.contains("cogmento"));
+	}
+	
+	@Test
+	public void bellIconExist()
+	{
+		Assert.assertTrue(loginPage.isBellIconImagePresent());
+	}
+	
+	@Test(priority = Integer.MAX_VALUE)
+	public void loginTest()
+	{
+		String cogmentoTitle = loginPage.doLogin("madhusudanjayasimha1990@gmail.com", "Madhu@1990");
+		Assert.assertEquals(cogmentoTitle, "Cogmento CRM");
+	}
+}

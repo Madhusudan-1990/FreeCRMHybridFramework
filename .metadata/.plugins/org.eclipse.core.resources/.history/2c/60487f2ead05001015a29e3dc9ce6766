@@ -1,0 +1,36 @@
+package com.qa.crm.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage 
+{
+	private WebDriver driver;
+	
+	private By userName = By.name("email");
+	private By password = By.name("password");
+	private By loginBtn = By.xpath("//div[text()='Login']");
+	private By forgotPasswordLink = By.linkText("Forgot your password?");
+	private By bellIconImage = By.cssSelector("div[class*='md']");
+	
+	public LoginPage(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+	
+	public String getLoginPageTitle()
+	{
+		String pageTitle = driver.getTitle();
+		System.out.println("Login Page Title : "+pageTitle);
+		return pageTitle;
+	}
+	
+	public String getCurrentUrl()
+	{
+		String pageUrl= driver.getCurrentUrl();
+		System.out.println("Login Page Title : "+pageTitle);
+		return pageTitle;
+	}
+	
+
+}
