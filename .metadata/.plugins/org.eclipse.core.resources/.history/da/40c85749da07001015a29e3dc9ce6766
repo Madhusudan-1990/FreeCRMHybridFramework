@@ -1,0 +1,10 @@
+package com.qa.crm.pages;
+
+import org.openqa.selenium.By;
+
+public class HomePage 
+{
+	By homeIcon = By.xpath("//i[@class = 'home icon']");
+	By calendarIcon = By.xpath("//i[@class = 'calendar icon']");
+	By contactsIcon = By.xpath("//i[@class = 'calendar icon']");
+}

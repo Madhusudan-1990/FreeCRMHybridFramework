@@ -1,0 +1,6 @@
+package com.qa.crm.errors;
+
+public class AppError 
+{
+	public static final String LOGIN_PAGE_TITLE="Cogmento CRM";
+}

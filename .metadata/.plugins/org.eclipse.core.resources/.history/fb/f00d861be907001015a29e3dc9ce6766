@@ -1,0 +1,14 @@
+package com.qa.crm.tests;
+
+import org.testng.annotations.BeforeClass;
+
+import com.qa.crm.base.BaseTest;
+
+public class HomePageTest extends BaseTest
+{
+	@BeforeClass
+	public void homeSetup()
+	{
+		
+	}
+}

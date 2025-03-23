@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import com.qa.crm.errors.AppError;
 import com.qa.crm.exceptions.BrowserException;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -45,8 +46,8 @@ public class DriverFactory
 			break;
 			
 		default:
-			System.out.println("Please pass on the right browser name !!!"+browserName);
-			throw new BrowserException("INVALID BROWSER "+browserName);	
+			System.out.println(AppError.INVALID_BROWSER_MSG + browserName + "is invalid browser");
+			throw new BrowserException(AppError.INVALID_BROWSER_MSG + browserName);	
 
 		}
 		driver.manage().window().maximize();

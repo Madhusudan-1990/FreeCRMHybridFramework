@@ -1,0 +1,19 @@
+package com.qa.crm.utils;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class ElementUtil 
+{
+	
+	public void doSendKeys(By locator, String value)
+	{
+		
+	}
+	
+	public WebElement getElement(By locator)
+	{
+		return driver
+	}
+
+}

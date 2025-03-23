@@ -7,6 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.qa.crm.factory.DriverFactory;
+import com.qa.crm.pages.HomePage;
 import com.qa.crm.pages.LoginPage;
 
 public class BaseTest 
@@ -14,9 +15,10 @@ public class BaseTest
 	
 	WebDriver driver;
 	DriverFactory df;
-	Properties prop;
+	protected Properties prop;
 	
 	protected LoginPage loginPage;
+	protected HomePage homePage;
 	
 	@BeforeTest
 	public void setup()

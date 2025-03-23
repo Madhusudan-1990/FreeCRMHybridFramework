@@ -1,0 +1,11 @@
+package com.qa.crm.constants;
+
+public class AppConstants 
+{
+	public static final int DEFAULT_SHORT_TIME_OUT=5;
+	public static final int DEFAULT_MEDIUM_TIME_OUT=5;
+	public static final int DEFAULT_SHORT_TIME_OUT=5;
+	
+	public static final String LOGIN_PAGE_TITLE="Cogmento CRM";
+	public static final String LOGIN_PAGE_FRACTION_URL="cogmento";
+}

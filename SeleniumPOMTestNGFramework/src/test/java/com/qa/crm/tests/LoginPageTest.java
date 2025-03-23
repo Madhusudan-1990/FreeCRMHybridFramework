@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.crm.base.BaseTest;
+import com.qa.crm.constants.AppConstants;
 
 public class LoginPageTest extends BaseTest
 {
@@ -11,14 +12,14 @@ public class LoginPageTest extends BaseTest
 	public void loginPageTitleTest()
 	{
 		String actualTitle = loginPage.getLoginPageTitle();
-		Assert.assertEquals(actualTitle, "Cogmento CRM");
+		Assert.assertEquals(actualTitle,AppConstants.LOGIN_PAGE_TITLE);
 	}
 	
 	@Test
 	public void loginPageURLTest()
 	{
 		String actualUrl = loginPage.getCurrentUrl();
-		Assert.assertTrue(actualUrl.contains("cogmento"));
+		Assert.assertTrue(actualUrl.contains(AppConstants.LOGIN_PAGE_FRACTION_URL));
 	}
 	
 	@Test
@@ -30,7 +31,7 @@ public class LoginPageTest extends BaseTest
 	@Test(priority = Integer.MAX_VALUE)
 	public void loginTest()
 	{
-		String cogmentoTitle = loginPage.doLogin("madhusudanjayasimha1990@gmail.com", "Madhu@1990");
-		Assert.assertEquals(cogmentoTitle, "Cogmento CRM");
+		homePage = loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
+		Assert.assertEquals(homePage.getHomePageTitle(),AppConstants.LOGIN_PAGE_TITLE);
 	}
 }
