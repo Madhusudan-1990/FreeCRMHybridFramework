@@ -47,19 +47,25 @@ public class HomePage
 	}
 	public boolean isHomePageIconExists()
 	{
+		eleUtil.waitForElementsVisible(homeIcon,  AppConstants.DEFAULT_MEDIUM_TIME_OUT);
 		return eleUtil.isElementDisplayed(homeIcon);
 	}
 	public boolean isCalendarIconExists()
 	{
+		eleUtil.waitForElementsVisible(calendarIcon,  AppConstants.DEFAULT_MEDIUM_TIME_OUT);
 		return eleUtil.isElementDisplayed(calendarIcon);
 	}
 	public boolean isContactsIconExists()
 	{
+		eleUtil.waitForElementsVisible(contactsIcon,  AppConstants.DEFAULT_MEDIUM_TIME_OUT);
 		return eleUtil.isElementDisplayed(contactsIcon);
 	}
 	public ResultsPage doSearch(String searchKey)
 	{
-		eleUtil.waitForElementVisible(search, AppConstants.DEFAULT_SHORT_TIME_OUT).sendKeys(searchKey);
+		System.out.println("Search Key ==> "+ searchKey);
+		WebElement eleSearch =  eleUtil.waitForElementVisible(search, AppConstants.DEFAULT_SHORT_TIME_OUT);
+		eleSearch.clear();
+		eleSearch.sendKeys(searchKey);
 		eleUtil.pressEnterViaKeyboard(AppConstants.DEFAULT_ULTRA_LONG_TIME_OUT);
 		return new ResultsPage(driver);
 	}

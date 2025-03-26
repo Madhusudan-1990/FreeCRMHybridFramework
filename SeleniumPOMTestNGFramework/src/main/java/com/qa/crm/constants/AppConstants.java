@@ -11,9 +11,9 @@ public class AppConstants
 	public static final String LOGIN_PAGE_TITLE="Cogmento CRM";
 	public static final String HOME_PAGE_TITLE="Cogmento CRM";
 	
-	public static final int HOME_PAGE_HEADERS_COUNT = 5;
+	public static final int HOME_PAGE_HEADERS_COUNT = 3;
 	
 	public static final String LOGIN_PAGE_FRACTION_URL="cogmento";
 	
-	public static final List<String> EXPECTED_HOME_HEADERS_LIST = List.of("Deals Summary","SALE TARGETS","Contacts activity stream","Deals","Today");
+	public static final List<String> EXPECTED_HOME_HEADERS_LIST = List.of("Contacts activity stream","Deals","Today");
 }

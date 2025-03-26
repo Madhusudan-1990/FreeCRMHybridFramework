@@ -100,7 +100,7 @@ public class ElementUtil {
 	}
 
 	public String doElementGetAttribute(By locator, String attrName) {
-		return getElement(locator).getAttribute(attrName);
+		return getElement(locator).getDomAttribute(attrName);
 	}
 
 	public List<WebElement> getElements(By locator) {
@@ -574,9 +574,9 @@ public class ElementUtil {
 		return false;
 	}
 	
-	public void  pressEnter()
+	public void navigateBack()
 	{
-		
+		driver.navigate().back();
 	}
 
 }

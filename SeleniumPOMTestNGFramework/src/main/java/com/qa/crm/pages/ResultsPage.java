@@ -41,5 +41,11 @@ public class ResultsPage
 		eleUtil.doClick(By.linkText(contactName));
 		return new PersonDetailsPage(driver);
 	}
+	
+	public HomePage returnBackToHomePage()
+	{
+		eleUtil.navigateBack();
+		return new HomePage(driver);
+	}
 
 }

@@ -17,52 +17,56 @@ public class HomePageTest extends BaseTest
 		homePage = loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void homePageTitleTest()
 	{
 		String actualTitle = homePage.getHomePageTitle();
 		Assert.assertEquals(actualTitle,AppConstants.HOME_PAGE_TITLE);
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void isHomePageIconTest()
 	{
 		Assert.assertTrue(homePage.isHomePageIconExists());
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void isCalendarPageIconTest()
 	{
 		Assert.assertTrue(homePage.isCalendarIconExists());
 	}
 	
-	@Test
+	@Test(priority = 4)
 	public void isContactsPageIconTest()
 	{
 		Assert.assertTrue(homePage.isContactsIconExists());
 	}
 	
-	@Test
+	@Test(priority = 5)
 	public void homePageHeadersCountTest()
 	{
 		Assert.assertEquals(homePage.getTotalHomePageHeaderCount(),AppConstants.HOME_PAGE_HEADERS_COUNT);
 	}
 	
-	@Test
+	@Test(priority = 6)
 	public void homePageHeadersTest()
 	{
 		List<String> headersList = homePage.getHomePageHeaders();
 		Assert.assertEquals(headersList,AppConstants.EXPECTED_HOME_HEADERS_LIST);
 	}
 	
-	@Test
+	@Test(priority = 7)
 	public void searchCountTest()
 	{
 		resultPage = homePage.doSearch("TOM");
 		Assert.assertEquals(resultPage.getResultsSearchCount(),9);
 	}
-	
-	@Test
+	@Test(priority = 8)
+	public void returnBackToHomePageTest()
+	{
+		homePage = resultPage.returnBackToHomePage();
+	}
+	@Test(priority = 9)
 	public void searchTest()
 	{
 		resultPage = homePage.doSearch("TOM");
