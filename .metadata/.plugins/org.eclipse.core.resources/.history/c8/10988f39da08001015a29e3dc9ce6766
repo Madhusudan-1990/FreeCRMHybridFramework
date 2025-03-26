@@ -1,0 +1,23 @@
+package com.qa.crm.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import com.qa.crm.utils.ElementUtil;
+
+public class ResultsPage 
+{
+	private WebDriver driver;
+	private ElementUtil eleUtil;
+	
+	private By searchHeader = By.xpath("//span[@class='selectable ']");
+	private By results = By.cssSelector("tbody tr");
+	
+	public ResultsPage(WebDriver driver)
+	{
+		this.driver = driver;
+		eleUtil = new ElementUtil(driver);
+		
+	}
+
+}

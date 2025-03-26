@@ -1,0 +1,21 @@
+package com.qa.crm.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import com.qa.crm.utils.ElementUtil;
+
+public class PersonDetailsPage 
+{
+	private WebDriver driver;
+	private ElementUtil eleUtil;
+	
+	private By personHeader = By.xpath("//span[@class='selectable ']");
+	
+	public PersonDetailsPage(WebDriver driver)
+	{
+		this.driver = driver;
+		eleUtil = new ElementUtil(driver);
+		
+	}
+}

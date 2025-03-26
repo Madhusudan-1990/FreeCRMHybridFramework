@@ -1,0 +1,9 @@
+package com.qa.crm.pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class ResultsPage 
+{
+	private WebDriver driver;
+
+}

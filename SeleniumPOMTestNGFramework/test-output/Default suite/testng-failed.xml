@@ -7,8 +7,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="homeSetup"/>
-          <include name="homePageHeadersTest"/>
           <include name="setup"/>
+          <include name="searchTest"/>
         </methods>
       </class> <!-- com.qa.crm.tests.HomePageTest -->
     </classes>

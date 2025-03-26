@@ -1,0 +1,63 @@
+package com.qa.crm.tests;
+
+import java.util.List;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.qa.crm.base.BaseTest;
+import com.qa.crm.constants.AppConstants;
+
+public class HomePageTest extends BaseTest
+{
+	@BeforeClass
+	public void homeSetup()
+	{
+		homePage = loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
+	}
+	
+	@Test
+	public void homePageTitleTest()
+	{
+		String actualTitle = homePage.getHomePageTitle();
+		Assert.assertEquals(actualTitle,AppConstants.HOME_PAGE_TITLE);
+	}
+	
+	@Test
+	public void isHomePageIconTest()
+	{
+		Assert.assertTrue(homePage.isHomePageIconExists());
+	}
+	
+	@Test
+	public void isCalendarPageIconTest()
+	{
+		Assert.assertTrue(homePage.isCalendarIconExists());
+	}
+	
+	@Test
+	public void isContactsPageIconTest()
+	{
+		Assert.assertTrue(homePage.isContactsIconExists());
+	}
+	
+	@Test
+	public void homePageHeadersCountTest()
+	{
+		Assert.assertEquals(homePage.getTotalHomePageHeaderCount(),AppConstants.HOME_PAGE_HEADERS_COUNT);
+	}
+	
+	@Test
+	public void homePageHeadersTest()
+	{
+		List<String> headersList = homePage.getHomePageHeaders();
+		Assert.assertEquals(headersList,AppConstants.EXPECTED_HOME_HEADERS_LIST);
+	}
+	
+	public void searchCountTest()
+	{
+		resultPage = homePage.doSearch("TOM");
+		Assert.assertEquals(resultPage.getResultsSearchCount(),3);
+	}
+}

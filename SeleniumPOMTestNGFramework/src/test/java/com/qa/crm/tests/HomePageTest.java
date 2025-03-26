@@ -54,4 +54,20 @@ public class HomePageTest extends BaseTest
 		List<String> headersList = homePage.getHomePageHeaders();
 		Assert.assertEquals(headersList,AppConstants.EXPECTED_HOME_HEADERS_LIST);
 	}
+	
+	@Test
+	public void searchCountTest()
+	{
+		resultPage = homePage.doSearch("TOM");
+		Assert.assertEquals(resultPage.getResultsSearchCount(),9);
+	}
+	
+	@Test
+	public void searchTest()
+	{
+		resultPage = homePage.doSearch("TOM");
+		personDetailPage = resultPage.selectContact("TOM CRUISE"); 
+		Assert.assertEquals(personDetailPage.getPersonHeader(), "TOM CRUISE");
+		
+	}
 }

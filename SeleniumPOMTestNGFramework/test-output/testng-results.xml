@@ -1,77 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-23T22:02:36 IST" name="CRM App Test Regression Suite" finished-at="2025-03-23T22:02:54 IST" duration-ms="17410">
+  <suite started-at="2025-03-26T10:10:21 IST" name="Default suite" finished-at="2025-03-26T10:10:58 IST" duration-ms="37145">
     <groups>
     </groups>
-    <test started-at="2025-03-23T22:02:36 IST" name="Login Page Test" finished-at="2025-03-23T22:02:51 IST" duration-ms="14829">
-      <class name="com.qa.crm.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d746ce4]" started-at="2025-03-23T22:02:37 IST" name="setup" finished-at="2025-03-23T22:02:49 IST" duration-ms="12236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="bellIconExist()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d746ce4]" started-at="2025-03-23T22:02:49 IST" name="bellIconExist" finished-at="2025-03-23T22:02:49 IST" duration-ms="293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bellIconExist -->
-        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d746ce4]" started-at="2025-03-23T22:02:50 IST" name="loginPageTitleTest" finished-at="2025-03-23T22:02:50 IST" duration-ms="359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="loginPageURLTest()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d746ce4]" started-at="2025-03-23T22:02:50 IST" name="loginPageURLTest" finished-at="2025-03-23T22:02:50 IST" duration-ms="118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageURLTest -->
-        <test-method signature="loginTest()[pri:2147483647, instance:com.qa.crm.tests.LoginPageTest@2d746ce4]" started-at="2025-03-23T22:02:50 IST" name="loginTest" finished-at="2025-03-23T22:02:51 IST" duration-ms="962" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.LoginPageTest@2d746ce4]" started-at="2025-03-23T22:02:51 IST" name="tearDown" finished-at="2025-03-23T22:02:51 IST" duration-ms="243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.crm.tests.LoginPageTest -->
-    </test> <!-- Login Page Test -->
-    <test started-at="2025-03-23T22:02:36 IST" name="Home Page Test" finished-at="2025-03-23T22:02:54 IST" duration-ms="17409">
+    <test started-at="2025-03-26T10:10:21 IST" name="Default test" finished-at="2025-03-26T10:10:58 IST" duration-ms="37145">
       <class name="com.qa.crm.tests.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.crm.tests.HomePageTest@258ee7de]" started-at="2025-03-23T22:02:37 IST" name="setup" finished-at="2025-03-23T22:02:43 IST" duration-ms="6288" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.crm.tests.HomePageTest@736048ed]" started-at="2025-03-26T10:10:21 IST" name="setup" finished-at="2025-03-26T10:10:32 IST" duration-ms="10463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="homeSetup()[pri:0, instance:com.qa.crm.tests.HomePageTest@258ee7de]" started-at="2025-03-23T22:02:43 IST" name="homeSetup" finished-at="2025-03-23T22:02:51 IST" duration-ms="7819" status="PASS">
+        <test-method is-config="true" signature="homeSetup()[pri:0, instance:com.qa.crm.tests.HomePageTest@736048ed]" started-at="2025-03-26T10:10:32 IST" name="homeSetup" finished-at="2025-03-26T10:10:32 IST" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeSetup -->
-        <test-method signature="homePageHeadersCountTest()[pri:0, instance:com.qa.crm.tests.HomePageTest@258ee7de]" started-at="2025-03-23T22:02:51 IST" name="homePageHeadersCountTest" finished-at="2025-03-23T22:02:53 IST" duration-ms="2657" status="PASS">
+        <test-method signature="searchTest()[pri:0, instance:com.qa.crm.tests.HomePageTest@736048ed]" started-at="2025-03-26T10:10:32 IST" name="searchTest" finished-at="2025-03-26T10:10:58 IST" duration-ms="25059" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageHeadersCountTest -->
-        <test-method signature="homePageHeadersTest()[pri:0, instance:com.qa.crm.tests.HomePageTest@258ee7de]" started-at="2025-03-23T22:02:53 IST" name="homePageHeadersTest" finished-at="2025-03-23T22:02:54 IST" duration-ms="142" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageHeadersTest -->
-        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.crm.tests.HomePageTest@258ee7de]" started-at="2025-03-23T22:02:54 IST" name="homePageTitleTest" finished-at="2025-03-23T22:02:54 IST" duration-ms="40" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageTitleTest -->
-        <test-method signature="isCalendarPageIconTest()[pri:0, instance:com.qa.crm.tests.HomePageTest@258ee7de]" started-at="2025-03-23T22:02:54 IST" name="isCalendarPageIconTest" finished-at="2025-03-23T22:02:54 IST" duration-ms="30" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isCalendarPageIconTest -->
-        <test-method signature="isContactsPageIconTest()[pri:0, instance:com.qa.crm.tests.HomePageTest@258ee7de]" started-at="2025-03-23T22:02:54 IST" name="isContactsPageIconTest" finished-at="2025-03-23T22:02:54 IST" duration-ms="54" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isContactsPageIconTest -->
-        <test-method signature="isHomePageIconTest()[pri:0, instance:com.qa.crm.tests.HomePageTest@258ee7de]" started-at="2025-03-23T22:02:54 IST" name="isHomePageIconTest" finished-at="2025-03-23T22:02:54 IST" duration-ms="33" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isHomePageIconTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.HomePageTest@258ee7de]" started-at="2025-03-23T22:02:54 IST" name="tearDown" finished-at="2025-03-23T22:02:54 IST" duration-ms="175" status="PASS">
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.HomePageTest@736048ed]" started-at="2025-03-26T10:10:58 IST" name="tearDown" finished-at="2025-03-26T10:10:58 IST" duration-ms="482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.crm.tests.HomePageTest -->
-    </test> <!-- Home Page Test -->
-  </suite> <!-- CRM App Test Regression Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

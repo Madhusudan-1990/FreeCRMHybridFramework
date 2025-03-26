@@ -1,0 +1,12 @@
+package com.qa.crm.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class ResultsPage 
+{
+	private WebDriver driver;
+	
+	private By searchHeader = By.xpath("//span[@class='selectable ']");
+
+}

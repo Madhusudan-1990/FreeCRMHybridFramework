@@ -29,7 +29,7 @@ public class HomePage
 	
 	public String getHomePageTitle()
 	{
-		String homePageTitle = eleUtil.waitForTitleContains(AppConstants.HOME_PAGE_TITLE, AppConstants.DEFAULT_SHORT_TIME_OUT);
+		String homePageTitle = eleUtil.waitForTitleContainsAndReturn(AppConstants.HOME_PAGE_TITLE, AppConstants.DEFAULT_SHORT_TIME_OUT);
 		System.out.println("Home Page Title : "+homePageTitle);
 		return homePageTitle;
 	}
@@ -57,9 +57,10 @@ public class HomePage
 	{
 		return eleUtil.isElementDisplayed(contactsIcon);
 	}
-	public void doSearch(String searchKey)
+	public ResultsPage doSearch(String searchKey)
 	{
 		eleUtil.waitForElementVisible(search, AppConstants.DEFAULT_SHORT_TIME_OUT).sendKeys(searchKey);
-		eleUtil.doClick(searchIcon);
+		eleUtil.pressEnterViaKeyboard(AppConstants.DEFAULT_ULTRA_LONG_TIME_OUT);
+		return new ResultsPage(driver);
 	}
 }
