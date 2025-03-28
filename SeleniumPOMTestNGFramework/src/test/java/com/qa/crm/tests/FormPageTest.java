@@ -22,9 +22,9 @@ public class FormPageTest extends BaseTest
 	{
 		return new Object[][]
 				{
-					{"TOM","Testing123","GSDFSDCSXCC"}
-//					{"David","Testing345","ASDASDASD"},
-//					{"Mukta","Testing567","GDFSDFFFF"}
+					{"TOM","Testing123","GSDFSDCSXCC"},
+					{"David","Testing345","ASDASDASD"},
+					{"Mukta","Testing567","GDFSDFFFF"}
 				};
 	}
 	
@@ -34,6 +34,7 @@ public class FormPageTest extends BaseTest
 		formPage.addForm();
 		formPage.submitForm(formNameText, introText, completeText,formNameText+AppConstants.FORM_PAGE_HEADER_SUFFIX);
 		Assert.assertEquals(formNameText+AppConstants.FORM_PAGE_HEADER_SUFFIX,formPage.createdFormHeader());
+		formPage.navigateToFormPage();
 		
 	}
 

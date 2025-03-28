@@ -19,6 +19,8 @@ public class FormPage
 	private By saveBtn = By.xpath("//button[@class='ui linkedin button']");
 	private By savedFormName = By.xpath("//span[@class='selectable ']");
 	private By formPreviewContent = By.xpath("//div[@class='ui container text left aligned cog-intro-text']//p");
+	private By formIcon = By.xpath("//i[@class = 'wpforms icon']");
+	private By formTab = By.xpath("//span[.='Forms']");
 	
 	public FormPage(WebDriver driver)
 	{
@@ -47,5 +49,16 @@ public class FormPage
 		String savedFormNameText = eleUtil.doGetElementText(savedFormName);
 		return savedFormNameText;
 	}
-
+	
+	public FormPage navigateToFormPage()
+	{
+		eleUtil.waitForElementsVisible(formIcon,  AppConstants.DEFAULT_LONG_TIME_OUT);
+		try {
+			eleUtil.ParentChildMenu(formIcon, formTab);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return new FormPage(driver);
+	}
 }

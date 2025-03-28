@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-28T20:55:42 IST" name="Default suite" finished-at="2025-03-28T20:57:03 IST" duration-ms="80452">
+  <suite started-at="2025-03-28T22:56:21 IST" name="Default suite" finished-at="2025-03-28T22:57:49 IST" duration-ms="87805">
     <groups>
     </groups>
-    <test started-at="2025-03-28T20:55:42 IST" name="Default test" finished-at="2025-03-28T20:57:03 IST" duration-ms="80452">
+    <test started-at="2025-03-28T22:56:21 IST" name="Default test" finished-at="2025-03-28T22:57:49 IST" duration-ms="87805">
       <class name="com.qa.crm.tests.FormPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.crm.tests.FormPageTest@3ed0918d]" started-at="2025-03-28T20:55:42 IST" name="setup" finished-at="2025-03-28T20:56:52 IST" duration-ms="69934" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.crm.tests.FormPageTest@f202d6d]" started-at="2025-03-28T22:56:21 IST" name="setup" finished-at="2025-03-28T22:57:23 IST" duration-ms="62192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="formSetup()[pri:0, instance:com.qa.crm.tests.FormPageTest@3ed0918d]" started-at="2025-03-28T20:56:52 IST" name="formSetup" finished-at="2025-03-28T20:56:58 IST" duration-ms="5345" status="PASS">
+        <test-method is-config="true" signature="formSetup()[pri:0, instance:com.qa.crm.tests.FormPageTest@f202d6d]" started-at="2025-03-28T22:57:23 IST" name="formSetup" finished-at="2025-03-28T22:57:30 IST" duration-ms="6520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formSetup -->
-        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@3ed0918d]" started-at="2025-03-28T20:56:58 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-03-28T20:57:02 IST" duration-ms="4268" status="PASS">
+        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@f202d6d]" started-at="2025-03-28T22:57:30 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-03-28T22:57:36 IST" duration-ms="6298" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,7 +36,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formSubmitPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.FormPageTest@3ed0918d]" started-at="2025-03-28T20:57:02 IST" name="tearDown" finished-at="2025-03-28T20:57:03 IST" duration-ms="491" status="PASS">
+        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@f202d6d]" started-at="2025-03-28T22:57:36 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-03-28T22:57:42 IST" duration-ms="6073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ASDASDASD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formSubmitPageTest -->
+        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@f202d6d]" started-at="2025-03-28T22:57:43 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-03-28T22:57:48 IST" duration-ms="5896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mukta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing567]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GDFSDFFFF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formSubmitPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.FormPageTest@f202d6d]" started-at="2025-03-28T22:57:48 IST" name="tearDown" finished-at="2025-03-28T22:57:49 IST" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
