@@ -1,0 +1,42 @@
+package com.qa.crm.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import com.qa.crm.utils.ElementUtil;
+
+public class FormPage 
+{
+	private WebDriver driver;
+	private ElementUtil eleUtil;
+	
+	private By addBtn = By.xpath("//button[@class='ui linkedin button']");
+	private By newFormHeader = By.xpath("//span[text()='New Form']");
+	private By formName = By.name("name");
+	private By introductionText = By.xpath("//textarea[@name='intro']");
+	private By completionText = By.xpath("//textarea[@name='outro']");
+	private By saveBtn = By.xpath("//button[@class='ui linkedin button']");
+	private final String formNameHeaderSuffix = "[Active]";
+	private By savedFormName = By.xpath("//span[text()='New Form']");
+	public FormPage(WebDriver driver)
+	{
+		this.driver = driver;
+		eleUtil = new ElementUtil(driver);
+	}
+	public boolean addForm()
+	{
+		eleUtil.doClick(addBtn);
+		return eleUtil.isElementDisplayed(newFormHeader);
+	}
+	public String submitForm(String formNameText, String introText, String completeText)
+	{
+		String savedFormName;
+		eleUtil.doSendKeys(formName, formNameText);
+		eleUtil.doSendKeys(introductionText, introText);
+		eleUtil.doSendKeys(completionText, completeText);
+		eleUtil.doClick(saveBtn);
+		eleUtil.doGetElementText(savedFormName)
+		
+	}
+
+}

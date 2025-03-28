@@ -1,0 +1,46 @@
+package com.qa.crm.tests;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.qa.crm.base.BaseTest;
+
+public class FormPageTest extends BaseTest
+{
+	@BeforeClass
+	public void formSetup()
+	{
+		formPage = homePage.navigateToFormPage();
+	}
+	
+
+	@DataProvider
+	public Object[][] getSearchKey()
+	{
+		return new Object[][]
+				{
+					{"TOM",9},
+					{"David",4},
+					{"Mukta",5}
+				};
+	}
+	@DataProvider
+	public Object[][] getFormData()
+	{
+		return new Object[][]
+				{
+					{"TOM","Testing123","asdasd"},
+					{"David","Testing345","asdasd"},
+					{"Mukta","Testing123","asdasd"}
+				};
+	}
+	@Test
+	public void formSubmitPageTest(String formNameText, String introText, String completeText )
+	{
+		formPage.addForm();
+		formPage.submitForm(formNameText, introText, completeText);
+		
+	}
+
+}

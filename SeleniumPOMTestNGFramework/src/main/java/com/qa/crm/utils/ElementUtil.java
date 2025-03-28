@@ -578,5 +578,10 @@ public class ElementUtil {
 	{
 		driver.navigate().back();
 	}
+	
+	public void addThreadSleep(int ms) throws InterruptedException
+	{
+		Thread.sleep(ms);
+	}
 
 }

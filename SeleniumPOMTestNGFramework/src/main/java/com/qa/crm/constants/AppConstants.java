@@ -7,7 +7,7 @@ public class AppConstants
 	public static final int DEFAULT_SHORT_TIME_OUT=5;
 	public static final int DEFAULT_MEDIUM_TIME_OUT=10;
 	public static final int DEFAULT_LONG_TIME_OUT=30;
-	public static final int DEFAULT_ULTRA_LONG_TIME_OUT=600;
+	public static final int DEFAULT_ULTRA_LONG_TIME_OUT=1000;
 	public static final String LOGIN_PAGE_TITLE="Cogmento CRM";
 	public static final String HOME_PAGE_TITLE="Cogmento CRM";
 	
@@ -16,4 +16,6 @@ public class AppConstants
 	public static final String LOGIN_PAGE_FRACTION_URL="cogmento";
 	
 	public static final List<String> EXPECTED_HOME_HEADERS_LIST = List.of("Deals Summary","SALE TARGETS","Contacts activity stream","Deals","Today");
+	
+	public static final String FORM_PAGE_HEADER_SUFFIX=" [Active]";
 }
