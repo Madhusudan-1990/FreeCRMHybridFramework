@@ -9,7 +9,6 @@
           <include name="homeSetup"/>
           <include name="homePageHeadersTest"/>
           <include name="setup"/>
-          <include name="homePageHeadersCountTest"/>
         </methods>
       </class> <!-- com.qa.crm.tests.HomePageTest -->
     </classes>

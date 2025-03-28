@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.crm.base.BaseTest;
@@ -55,23 +56,44 @@ public class HomePageTest extends BaseTest
 		Assert.assertEquals(headersList,AppConstants.EXPECTED_HOME_HEADERS_LIST);
 	}
 	
-	@Test(priority = 7)
-	public void searchCountTest()
+	@DataProvider
+	public Object[][] getSearchKey()
 	{
-		resultPage = homePage.doSearch("TOM");
-		Assert.assertEquals(resultPage.getResultsSearchCount(),9);
+		return new Object[][]
+				{
+					{"TOM",9},
+					{"David",4},
+					{"Mukta",5}
+				};
+	}
+	
+	@Test(priority = 7,dataProvider = "getSearchKey")
+	public void searchCountTest(String searchKey,int searchCount)
+	{
+		resultPage = homePage.doSearch(searchKey);
+		Assert.assertEquals(resultPage.getResultsSearchCount(),searchCount);
 	}
 	@Test(priority = 8)
 	public void returnBackToHomePageTest()
 	{
 		homePage = resultPage.returnBackToHomePage();
 	}
-	@Test(priority = 9)
-	public void searchTest()
+	@DataProvider
+	public Object[][] getSearchData()
 	{
-		resultPage = homePage.doSearch("TOM");
-		personDetailPage = resultPage.selectContact("TOM CRUISE"); 
-		Assert.assertEquals(personDetailPage.getPersonHeader(), "TOM CRUISE");
+		return new Object[][]
+				{
+					{"TOM","TOM CRUISE"},
+					{"David","David Cris"},
+					{"Mukta","Mukta Sharma"}
+				};
+	}
+	@Test(priority = 9,dataProvider = "getSearchData")
+	public void searchTest(String searchKey, String searchValue)
+	{
+		resultPage = homePage.doSearch(searchKey);
+		personDetailPage = resultPage.selectContact(searchValue); 
+		Assert.assertEquals(personDetailPage.getPersonHeader(), searchValue);
 		
 	}
 }
