@@ -20,6 +20,8 @@ public class HomePage
 	private By searchIcon = By.xpath("//i[@class='black search icon']");
 	private By calendarIcon = By.xpath("//i[@class = 'calendar icon']");
 	private By contactsIcon = By.xpath("//i[@class = 'users icon']");
+	private By formIcon = By.xpath("//i[@class = 'wpforms icon']");
+	private By formTab = By.xpath("//span[.='Forms']");
 	
 	public HomePage(WebDriver driver)
 	{
@@ -66,5 +68,17 @@ public class HomePage
 		eleUtil.doSendKeys(search, searchKey);
 		eleUtil.pressEnterViaKeyboard(AppConstants.DEFAULT_ULTRA_LONG_TIME_OUT);
 		return new ResultsPage(driver);
+	}
+	
+	public FormPage navigateToFormPage()
+	{
+		eleUtil.waitForElementsVisible(formIcon,  AppConstants.DEFAULT_LONG_TIME_OUT);
+		try {
+			eleUtil.ParentChildMenu(formIcon, formTab);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return new FormPage(driver);
 	}
 }
