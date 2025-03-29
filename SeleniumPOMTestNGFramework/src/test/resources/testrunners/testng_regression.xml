@@ -12,4 +12,16 @@
       <class name="com.qa.crm.tests.HomePageTest"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test name="Contacts Page Test">
+    <classes>
+      <class name="com.qa.crm.tests.ContactsPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test name="Forms Page Test">
+    <classes>
+      <class name="com.qa.crm.tests.FormPageTest"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

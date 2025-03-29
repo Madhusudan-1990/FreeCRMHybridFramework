@@ -7,7 +7,6 @@
         <methods>
           <include name="tearDown"/>
           <include name="homeSetup"/>
-          <include name="homePageHeadersTest"/>
           <include name="setup"/>
           <include name="homePageHeadersCountTest"/>
         </methods>

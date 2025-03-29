@@ -579,9 +579,9 @@ public class ElementUtil {
 		driver.navigate().back();
 	}
 	
-	public void addThreadSleep(int ms) throws InterruptedException
+	public void addThreadSleep(long defaultThreadSleepTime) throws InterruptedException
 	{
-		Thread.sleep(ms);
+		Thread.sleep(defaultThreadSleepTime);
 	}
 
 }

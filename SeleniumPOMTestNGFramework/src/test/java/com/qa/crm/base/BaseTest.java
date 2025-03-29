@@ -7,11 +7,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.qa.crm.factory.DriverFactory;
+import com.qa.crm.pages.ContactsPage;
 import com.qa.crm.pages.FormPage;
 import com.qa.crm.pages.HomePage;
 import com.qa.crm.pages.LoginPage;
 import com.qa.crm.pages.PersonDetailsPage;
-import com.qa.crm.pages.ResultsPage;
 
 public class BaseTest 
 {
@@ -22,9 +22,9 @@ public class BaseTest
 	
 	protected LoginPage loginPage;
 	protected HomePage homePage;
-	protected ResultsPage resultPage;
 	protected PersonDetailsPage personDetailPage;
 	protected FormPage formPage;
+	protected ContactsPage contactPage;
 	
 	@BeforeTest
 	public void setup()

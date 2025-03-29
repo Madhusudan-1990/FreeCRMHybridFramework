@@ -18,7 +18,6 @@ public class FormPage
 	private By completionText = By.xpath("//textarea[@name='outro']");
 	private By saveBtn = By.xpath("//button[@class='ui linkedin button']");
 	private By savedFormName = By.xpath("//span[@class='selectable ']");
-	private By formPreviewContent = By.xpath("//div[@class='ui container text left aligned cog-intro-text']//p");
 	private By formIcon = By.xpath("//i[@class = 'wpforms icon']");
 	private By formTab = By.xpath("//span[.='Forms']");
 	
@@ -45,14 +44,14 @@ public class FormPage
 	}
 	public String createdFormHeader() throws InterruptedException
 	{
-		eleUtil.addThreadSleep(3000);
+		eleUtil.addThreadSleep(AppConstants.DEFAULT_THREAD_SLEEP_TIME);
 		String savedFormNameText = eleUtil.doGetElementText(savedFormName);
 		return savedFormNameText;
 	}
 	
-	public FormPage navigateToFormPage()
+	public FormPage navigateToFormPage() throws InterruptedException
 	{
-		eleUtil.waitForElementsVisible(formIcon,  AppConstants.DEFAULT_LONG_TIME_OUT);
+		eleUtil.addThreadSleep(AppConstants.DEFAULT_THREAD_SLEEP_TIME);
 		try {
 			eleUtil.ParentChildMenu(formIcon, formTab);
 		} catch (InterruptedException e) {

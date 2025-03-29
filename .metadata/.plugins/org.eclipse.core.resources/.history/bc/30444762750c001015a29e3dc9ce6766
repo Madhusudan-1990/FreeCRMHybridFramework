@@ -1,0 +1,14 @@
+package com.qa.crm.tests;
+import org.testng.annotations.BeforeClass;
+
+import com.qa.crm.base.BaseTest;
+public class ContactsPageTest extends BaseTest
+{
+	@BeforeClass
+	public void homeSetup()
+	{
+		homePage = loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
+	}
+	
+	
+}

@@ -12,7 +12,7 @@ public class PersonDetailsPage
 	private ElementUtil eleUtil;
 	
 	private By personHeader = By.xpath("//span[@class='selectable ']");
-	
+	private By contactsIcon = By.xpath("//i[@class = 'users icon']");
 	public PersonDetailsPage(WebDriver driver)
 	{
 		this.driver = driver;
@@ -23,7 +23,7 @@ public class PersonDetailsPage
 	public String getPersonHeader()
 	{
 		String personHeaderValue = eleUtil.waitForElementVisible(personHeader, AppConstants.DEFAULT_SHORT_TIME_OUT).getText();
-		System.out.println("Person Header ========> "+personHeaderValue);
+		System.out.println("Person Header =======> "+personHeaderValue);
 		return personHeaderValue;
 	}
 }

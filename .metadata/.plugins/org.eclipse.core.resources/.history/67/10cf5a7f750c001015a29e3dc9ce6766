@@ -1,0 +1,30 @@
+package com.qa.crm.tests;
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.qa.crm.base.BaseTest;
+public class ContactsPageTest extends BaseTest
+{
+	@BeforeClass
+	public void homeSetup()
+	{
+		homePage = loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
+	}
+	
+	@Test(priority = 1)
+	public void verifyContactsPageLabel()
+	{
+		boolean flag = contactPage.verifyContactsLabel();
+		Assert.assertTrue(flag,"Failed to verify Contacts Page !!!");
+		
+	}
+	@Test(priority = 2)
+	public void selectUserByName()
+	{
+		driver.findElement(By.xpath("//i[@class='refresh icon']")).click();
+		contact.selectContactsByName("Tom Peter");
+//		Assert.assertTrue(contact.contactSelected(),"Contact Not Selected. Please Check !!!");
+	}
+}

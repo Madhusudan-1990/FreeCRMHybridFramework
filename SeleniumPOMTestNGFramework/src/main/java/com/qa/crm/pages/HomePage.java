@@ -62,12 +62,12 @@ public class HomePage
 		eleUtil.waitForElementsVisible(contactsIcon,  AppConstants.DEFAULT_MEDIUM_TIME_OUT);
 		return eleUtil.isElementDisplayed(contactsIcon);
 	}
-	public ResultsPage doSearch(String searchKey)
+	public ContactsPage doSearch(String searchKey)
 	{
 		System.out.println("Search Key ==> "+ searchKey);
 		eleUtil.doSendKeys(search, searchKey);
 		eleUtil.pressEnterViaKeyboard(AppConstants.DEFAULT_ULTRA_LONG_TIME_OUT);
-		return new ResultsPage(driver);
+		return new ContactsPage(driver);
 	}
 	
 	public FormPage navigateToFormPage()
@@ -80,5 +80,11 @@ public class HomePage
 			e.printStackTrace();
 		}
 		return new FormPage(driver);
+	}
+	
+	public ContactsPage navigateToContactPage()
+	{
+		eleUtil.doClick(contactsIcon, AppConstants.DEFAULT_LONG_TIME_OUT);
+		return new ContactsPage(driver);
 	}
 }
