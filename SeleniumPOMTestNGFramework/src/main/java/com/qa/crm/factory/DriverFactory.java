@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -36,14 +37,21 @@ public class DriverFactory
 			driver = new ChromeDriver();
 			break;
 		case "firefox":
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			break;
 		case "safari":
+			WebDriverManager.safaridriver().setup();
 			driver = new SafariDriver();
 			break;
 		case "ie":
+			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
-			break;
+			break;		
+		case "edge":
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+			break;	
 			
 		default:
 			System.out.println(AppError.INVALID_BROWSER_MSG + browserName + "is invalid browser");
