@@ -56,44 +56,4 @@ public class HomePageTest extends BaseTest
 		Assert.assertEquals(headersList,AppConstants.EXPECTED_HOME_HEADERS_LIST);
 	}
 	
-//	@DataProvider
-//	public Object[][] getSearchKey()
-//	{
-//		return new Object[][]
-//				{
-//					{"TOM",9},
-//					{"David",4},
-//					{"Mukta",5}
-//				};
-//	}
-//	
-//	@Test(priority = 7,dataProvider = "getSearchKey")
-//	public void searchCountTest(String searchKey,int searchCount)
-//	{
-//		resultPage = homePage.doSearch(searchKey);
-//		Assert.assertEquals(resultPage.getResultsSearchCount(),searchCount);
-//	}
-//	@Test(priority = 8)
-//	public void returnBackToHomePageTest()
-//	{
-//		homePage = resultPage.returnBackToHomePage();
-//	}
-//	@DataProvider
-//	public Object[][] getSearchData()
-//	{
-//		return new Object[][]
-//				{
-//					{"TOM","TOM CRUISE"},
-//					{"David","David Cris"},
-//					{"Mukta","Mukta Sharma"}
-//				};
-//	}
-//	@Test(priority = 9,dataProvider = "getSearchData")
-//	public void searchTest(String searchKey, String searchValue)
-//	{
-//		resultPage = homePage.doSearch(searchKey);
-//		personDetailPage = resultPage.selectContact(searchValue); 
-//		Assert.assertEquals(personDetailPage.getPersonHeader(), searchValue);
-//		
-//	}
 }

@@ -274,10 +274,10 @@ public class ElementUtil {
 			act.sendKeys(getElement(locator), String.valueOf(c)).pause(pauseTime).perform();
 		}
 	}
-	public void pressEnterViaKeyboard(int pauseTime) {
+	public void pressEnterViaKeyboard(long defaultThreadSleepTime) {
 	    Actions builder = new Actions(driver);
 	    builder.sendKeys(Keys.ENTER)
-	            .release().pause(pauseTime).perform();
+	            .release().pause(defaultThreadSleepTime).perform();
 	}
 
 	/**

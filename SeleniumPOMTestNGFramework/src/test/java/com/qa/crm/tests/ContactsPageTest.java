@@ -46,38 +46,23 @@ public class ContactsPageTest extends BaseTest
 	}
 
 	@DataProvider
-	public Object[][] getSearchKey()
-	{
-		return new Object[][]
-				{
-					{"TOM",9},
-					{"David",4},
-					{"Mukta",5}
-				};
-	}
-	
-	@Test(priority = 3,dataProvider = "getSearchKey")
-	public void searchCountTest(String searchKey,int searchCount)
-	{
-		contactPage = homePage.doSearch(searchKey);
-		Assert.assertEquals(contactPage.getResultsSearchCount(),searchCount);
-	}
-	@DataProvider
 	public Object[][] getSearchData()
 	{
 		return new Object[][]
 				{
-					{"TOM","TOM CRUISE"},
-					{"David","David Cris"},
-					{"Mukta","Mukta Sharma"}
+					{"Joe","Joe Simon"},
+					{"Bret","Bret Lee"},
+					{"Andy","Andy Flower"}
 				};
 	}
-	@Test(priority = 4,dataProvider = "getSearchData")
+	@Test(priority = 3,dataProvider = "getSearchData")
 	public void searchTest(String searchKey, String searchValue)
 	{
 		contactPage = homePage.doSearch(searchKey);
+		softAssert.assertEquals(contactPage.getResultsSearchCount(),contactPage.getcontactCount());
 		personDetailPage = contactPage.selectContact(searchValue); 
-		Assert.assertEquals(personDetailPage.getPersonHeader(), searchValue);
+		softAssert.assertEquals(personDetailPage.getPersonHeader(), searchValue);
+		softAssert.assertAll();
 		
 	}
 }

@@ -66,7 +66,7 @@ public class HomePage
 	{
 		System.out.println("Search Key ==> "+ searchKey);
 		eleUtil.doSendKeys(search, searchKey);
-		eleUtil.pressEnterViaKeyboard(AppConstants.DEFAULT_ULTRA_LONG_TIME_OUT);
+		eleUtil.pressEnterViaKeyboard(AppConstants.DEFAULT_THREAD_SLEEP_TIME);
 		return new ContactsPage(driver);
 	}
 	

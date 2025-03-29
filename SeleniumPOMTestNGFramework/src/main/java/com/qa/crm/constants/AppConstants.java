@@ -7,7 +7,7 @@ public class AppConstants
 	public static final int DEFAULT_SHORT_TIME_OUT=5;
 	public static final int DEFAULT_MEDIUM_TIME_OUT=10;
 	public static final int DEFAULT_LONG_TIME_OUT=40;
-	public static final int DEFAULT_ULTRA_LONG_TIME_OUT=1000;
+	public static final int DEFAULT_ULTRA_LONG_TIME_OUT=1200;
 	public static final String LOGIN_PAGE_TITLE="Cogmento CRM";
 	public static final String HOME_PAGE_TITLE="Cogmento CRM";
 	
