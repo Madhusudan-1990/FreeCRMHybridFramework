@@ -1,0 +1,25 @@
+package com.qa.crm.utils;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+public class ExcelUtil 
+{
+	private static final String TEST_DATA_SHEET_PATH = "./src/test/resources/testdata/crmtestdata.xlsx";
+	
+	public static void getTestData(String sheetName)
+	{
+		try 
+		{
+			FileInputStream fis = new  FileInputStream(TEST_DATA_SHEET_PATH);
+			WorkbookFactory.create(fis);
+		} 
+		catch (FileNotFoundException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

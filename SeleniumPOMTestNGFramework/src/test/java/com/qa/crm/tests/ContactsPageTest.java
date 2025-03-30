@@ -1,4 +1,5 @@
 package com.qa.crm.tests;
+import java.awt.desktop.AppHiddenEvent;
 import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -8,6 +9,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.qa.crm.base.BaseTest;
+import com.qa.crm.constants.AppConstants;
+import com.qa.crm.utils.*;
 public class ContactsPageTest extends BaseTest
 {
 	@BeforeClass
@@ -26,14 +29,15 @@ public class ContactsPageTest extends BaseTest
 	}
 	
 	@DataProvider
-	public Object getCRMTestData() 
+	public Object[][] getCRMTestData() 
 	{
-		return new Object[][]
-				{
-					{"Joe","Simon","Amazon"},
-					{"Bret","Lee","Flipkart"},
-					{"Andy","Flower","Google"}
-				};
+//		return new Object[][]
+//				{
+//					{"Joe","Simon","Amazon"},
+//					{"Bret","Lee","Flipkart"},
+//					{"Andy","Flower","Google"}
+//				};
+		return ExcelUtil.getTestData(AppConstants.CONT_SHEET_NAME);
 	}
 	
 	@Test(priority = 2,dataProvider = "getCRMTestData")
