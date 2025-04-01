@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+<testng-results ignored="0" total="20" passed="17" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-30T18:59:37 IST" name="CRM App Test Regression Suite" finished-at="2025-03-30T19:01:04 IST" duration-ms="87097">
+  <suite started-at="2025-04-01T22:47:46 IST" name="CRM App Test Regression Suite" finished-at="2025-04-01T22:50:12 IST" duration-ms="145118">
     <groups>
     </groups>
-    <test started-at="2025-03-30T18:59:37 IST" name="Login Page Test" finished-at="2025-03-30T19:00:08 IST" duration-ms="31678">
+    <test started-at="2025-04-01T22:47:46 IST" name="Login Page Test" finished-at="2025-04-01T22:49:05 IST" duration-ms="78667">
       <class name="com.qa.crm.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-03-30T18:59:37 IST" name="setup" finished-at="2025-03-30T19:00:02 IST" duration-ms="25744" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-04-01T22:47:46 IST" name="setup" finished-at="2025-04-01T22:48:48 IST" duration-ms="61704" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="bellIconExist()[pri:0, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-03-30T19:00:03 IST" name="bellIconExist" finished-at="2025-03-30T19:00:03 IST" duration-ms="409" status="PASS">
+        <test-method signature="bellIconExist()[pri:0, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-04-01T22:48:48 IST" name="bellIconExist" finished-at="2025-04-01T22:48:50 IST" duration-ms="1569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bellIconExist -->
-        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-03-30T19:00:04 IST" name="loginPageTitleTest" finished-at="2025-03-30T19:00:05 IST" duration-ms="571" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-04-01T22:48:50 IST" name="loginPageTitleTest" finished-at="2025-04-01T22:48:51 IST" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="loginPageURLTest()[pri:0, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-03-30T19:00:05 IST" name="loginPageURLTest" finished-at="2025-03-30T19:00:05 IST" duration-ms="573" status="PASS">
+        <test-method signature="loginPageURLTest()[pri:0, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-04-01T22:48:51 IST" name="loginPageURLTest" finished-at="2025-04-01T22:48:51 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageURLTest -->
-        <test-method signature="loginTest()[pri:2147483647, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-03-30T19:00:06 IST" name="loginTest" finished-at="2025-03-30T19:00:07 IST" duration-ms="1578" status="PASS">
+        <test-method signature="loginTest()[pri:2147483647, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-04-01T22:48:51 IST" name="loginTest" finished-at="2025-04-01T22:48:59 IST" duration-ms="8230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-03-30T19:00:07 IST" name="tearDown" finished-at="2025-03-30T19:00:08 IST" duration-ms="1183" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.LoginPageTest@38a1c423]" started-at="2025-04-01T22:48:59 IST" name="tearDown" finished-at="2025-04-01T22:49:05 IST" duration-ms="6177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.crm.tests.LoginPageTest -->
     </test> <!-- Login Page Test -->
-    <test started-at="2025-03-30T18:59:37 IST" name="Home Page Test" finished-at="2025-03-30T19:00:13 IST" duration-ms="36440">
+    <test started-at="2025-04-01T22:47:46 IST" name="Home Page Test" finished-at="2025-04-01T22:49:06 IST" duration-ms="79974">
       <class name="com.qa.crm.tests.HomePageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.HomePageTest@2bc9a775]" started-at="2025-03-30T18:59:37 IST" name="setup" finished-at="2025-03-30T19:00:06 IST" duration-ms="29040" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.HomePageTest@27b000f7]" started-at="2025-04-01T22:47:46 IST" name="setup" finished-at="2025-04-01T22:48:47 IST" duration-ms="60812" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,43 +53,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="homeSetup()[pri:0, instance:com.qa.crm.tests.HomePageTest@2bc9a775]" started-at="2025-03-30T19:00:06 IST" name="homeSetup" finished-at="2025-03-30T19:00:07 IST" duration-ms="1023" status="PASS">
+        <test-method is-config="true" signature="homeSetup()[pri:0, instance:com.qa.crm.tests.HomePageTest@27b000f7]" started-at="2025-04-01T22:48:47 IST" name="homeSetup" finished-at="2025-04-01T22:48:51 IST" duration-ms="3214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeSetup -->
-        <test-method signature="homePageTitleTest()[pri:1, instance:com.qa.crm.tests.HomePageTest@2bc9a775]" started-at="2025-03-30T19:00:07 IST" name="homePageTitleTest" finished-at="2025-03-30T19:00:07 IST" duration-ms="19" status="PASS">
+        <test-method signature="homePageTitleTest()[pri:1, instance:com.qa.crm.tests.HomePageTest@27b000f7]" started-at="2025-04-01T22:48:51 IST" name="homePageTitleTest" finished-at="2025-04-01T22:48:51 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method signature="isHomePageIconTest()[pri:2, instance:com.qa.crm.tests.HomePageTest@2bc9a775]" started-at="2025-03-30T19:00:07 IST" name="isHomePageIconTest" finished-at="2025-03-30T19:00:09 IST" duration-ms="2187" status="PASS">
+        <test-method signature="isHomePageIconTest()[pri:2, instance:com.qa.crm.tests.HomePageTest@27b000f7]" started-at="2025-04-01T22:48:51 IST" name="isHomePageIconTest" finished-at="2025-04-01T22:48:57 IST" duration-ms="6311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isHomePageIconTest -->
-        <test-method signature="isCalendarPageIconTest()[pri:3, instance:com.qa.crm.tests.HomePageTest@2bc9a775]" started-at="2025-03-30T19:00:09 IST" name="isCalendarPageIconTest" finished-at="2025-03-30T19:00:09 IST" duration-ms="108" status="PASS">
+        <test-method signature="isCalendarPageIconTest()[pri:3, instance:com.qa.crm.tests.HomePageTest@27b000f7]" started-at="2025-04-01T22:48:57 IST" name="isCalendarPageIconTest" finished-at="2025-04-01T22:48:58 IST" duration-ms="1023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isCalendarPageIconTest -->
-        <test-method signature="isContactsPageIconTest()[pri:4, instance:com.qa.crm.tests.HomePageTest@2bc9a775]" started-at="2025-03-30T19:00:09 IST" name="isContactsPageIconTest" finished-at="2025-03-30T19:00:09 IST" duration-ms="145" status="PASS">
+        <test-method signature="isContactsPageIconTest()[pri:4, instance:com.qa.crm.tests.HomePageTest@27b000f7]" started-at="2025-04-01T22:48:58 IST" name="isContactsPageIconTest" finished-at="2025-04-01T22:49:00 IST" duration-ms="2492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isContactsPageIconTest -->
-        <test-method signature="homePageHeadersCountTest()[pri:5, instance:com.qa.crm.tests.HomePageTest@2bc9a775]" started-at="2025-03-30T19:00:09 IST" name="homePageHeadersCountTest" finished-at="2025-03-30T19:00:09 IST" duration-ms="83" status="PASS">
+        <test-method signature="homePageHeadersCountTest()[pri:5, instance:com.qa.crm.tests.HomePageTest@27b000f7]" started-at="2025-04-01T22:49:00 IST" name="homePageHeadersCountTest" finished-at="2025-04-01T22:49:00 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageHeadersCountTest -->
-        <test-method signature="homePageHeadersTest()[pri:6, instance:com.qa.crm.tests.HomePageTest@2bc9a775]" started-at="2025-03-30T19:00:09 IST" name="homePageHeadersTest" finished-at="2025-03-30T19:00:09 IST" duration-ms="117" status="PASS">
+        <test-method signature="homePageHeadersTest()[pri:6, instance:com.qa.crm.tests.HomePageTest@27b000f7]" started-at="2025-04-01T22:49:01 IST" name="homePageHeadersTest" finished-at="2025-04-01T22:49:01 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageHeadersTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.HomePageTest@2bc9a775]" started-at="2025-03-30T19:00:09 IST" name="tearDown" finished-at="2025-03-30T19:00:13 IST" duration-ms="3637" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.HomePageTest@27b000f7]" started-at="2025-04-01T22:49:01 IST" name="tearDown" finished-at="2025-04-01T22:49:06 IST" duration-ms="5722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.crm.tests.HomePageTest -->
     </test> <!-- Home Page Test -->
-    <test started-at="2025-03-30T18:59:37 IST" name="Forms Page Test" finished-at="2025-03-30T19:00:59 IST" duration-ms="81965">
+    <test started-at="2025-04-01T22:47:46 IST" name="Forms Page Test" finished-at="2025-04-01T22:49:12 IST" duration-ms="85698">
       <class name="com.qa.crm.tests.FormPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@15dd5ac2]" started-at="2025-03-30T18:59:37 IST" name="setup" finished-at="2025-03-30T19:00:02 IST" duration-ms="25786" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@4d48bd85]" started-at="2025-04-01T22:47:47 IST" name="setup" finished-at="2025-04-01T22:48:40 IST" duration-ms="53226" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,11 +100,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="formSetup()[pri:0, instance:com.qa.crm.tests.FormPageTest@15dd5ac2]" started-at="2025-03-30T19:00:03 IST" name="formSetup" finished-at="2025-03-30T19:00:13 IST" duration-ms="10093" status="PASS">
+        <test-method is-config="true" signature="formSetup()[pri:0, instance:com.qa.crm.tests.FormPageTest@4d48bd85]" started-at="2025-04-01T22:48:40 IST" name="formSetup" finished-at="2025-04-01T22:49:02 IST" duration-ms="22646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formSetup -->
-        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@15dd5ac2]" started-at="2025-03-30T19:00:13 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-03-30T19:00:32 IST" duration-ms="18937" status="PASS">
+        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@4d48bd85]" started-at="2025-04-01T22:49:02 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-04-01T22:49:12 IST" duration-ms="9333" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -122,10 +122,74 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=134.0.6998.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbd60a9c1b4b72250537e82fe6903e6d, executeScript {script=arguments[0].style.backgroundColor = 'rgb(0,200,0)', args=[{element-6066-11e4-a52e-4f735466cecf=f.3A71D075FF52C7F6CFC576CDAFD3728E.d.7B416943A1017D07A7B07EBA7544F17C.e.439}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.117, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59173/devtoo..., se:cdpVersion: 134.0.6998.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbd60a9c1b4b72250537e82fe6903e6d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=134.0.6998.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbd60a9c1b4b72250537e82fe6903e6d, executeScript {script=arguments[0].style.backgroundColor = 'rgb(0,200,0)', args=[{element-6066-11e4-a52e-4f735466cecf=f.3A71D075FF52C7F6CFC576CDAFD3728E.d.7B416943A1017D07A7B07EBA7544F17C.e.439}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.117, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59173/devtoo..., se:cdpVersion: 134.0.6998.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbd60a9c1b4b72250537e82fe6903e6d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+at com.qa.crm.utils.JavaScriptUtil.changeColor(JavaScriptUtil.java:96)
+at com.qa.crm.utils.JavaScriptUtil.flash(JavaScriptUtil.java:90)
+at com.qa.crm.utils.ElementUtil.checkElementHighlight(ElementUtil.java:73)
+at com.qa.crm.utils.ElementUtil.getElement(ElementUtil.java:79)
+at com.qa.crm.utils.ElementUtil.doGetElementText(ElementUtil.java:93)
+at com.qa.crm.pages.FormPage.submitForm(FormPage.java:41)
+at com.qa.crm.tests.FormPageTest.formSubmitPageTest(FormPageTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formSubmitPageTest -->
-        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@15dd5ac2]" started-at="2025-03-30T19:00:32 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-03-30T19:00:45 IST" duration-ms="13029" status="PASS">
+        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@4d48bd85]" started-at="2025-04-01T22:49:12 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-04-01T22:49:12 IST" duration-ms="20" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -143,10 +207,74 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='ui linkedin button']"}
+  (Session info: chrome=134.0.6998.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbd60a9c1b4b72250537e82fe6903e6d, findElement {using=xpath, value=//button[@class='ui linkedin button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.117, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59173/devtoo..., se:cdpVersion: 134.0.6998.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbd60a9c1b4b72250537e82fe6903e6d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='ui linkedin button']"}
+  (Session info: chrome=134.0.6998.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbd60a9c1b4b72250537e82fe6903e6d, findElement {using=xpath, value=//button[@class='ui linkedin button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.117, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59173/devtoo..., se:cdpVersion: 134.0.6998.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbd60a9c1b4b72250537e82fe6903e6d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at com.qa.crm.utils.ElementUtil.getElement(ElementUtil.java:78)
+at com.qa.crm.utils.ElementUtil.doClick(ElementUtil.java:43)
+at com.qa.crm.pages.FormPage.addForm(FormPage.java:31)
+at com.qa.crm.tests.FormPageTest.formSubmitPageTest(FormPageTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formSubmitPageTest -->
-        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@15dd5ac2]" started-at="2025-03-30T19:00:45 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-03-30T19:00:58 IST" duration-ms="13720" status="PASS">
+        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@4d48bd85]" started-at="2025-04-01T22:49:12 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-04-01T22:49:12 IST" duration-ms="24" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -164,18 +292,82 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='ui linkedin button']"}
+  (Session info: chrome=134.0.6998.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbd60a9c1b4b72250537e82fe6903e6d, findElement {using=xpath, value=//button[@class='ui linkedin button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.117, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59173/devtoo..., se:cdpVersion: 134.0.6998.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbd60a9c1b4b72250537e82fe6903e6d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='ui linkedin button']"}
+  (Session info: chrome=134.0.6998.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbd60a9c1b4b72250537e82fe6903e6d, findElement {using=xpath, value=//button[@class='ui linkedin button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.117, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59173/devtoo..., se:cdpVersion: 134.0.6998.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbd60a9c1b4b72250537e82fe6903e6d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at com.qa.crm.utils.ElementUtil.getElement(ElementUtil.java:78)
+at com.qa.crm.utils.ElementUtil.doClick(ElementUtil.java:43)
+at com.qa.crm.pages.FormPage.addForm(FormPage.java:31)
+at com.qa.crm.tests.FormPageTest.formSubmitPageTest(FormPageTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formSubmitPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.FormPageTest@15dd5ac2]" started-at="2025-03-30T19:00:58 IST" name="tearDown" finished-at="2025-03-30T19:00:59 IST" duration-ms="281" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.FormPageTest@4d48bd85]" started-at="2025-04-01T22:49:12 IST" name="tearDown" finished-at="2025-04-01T22:49:12 IST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.crm.tests.FormPageTest -->
     </test> <!-- Forms Page Test -->
-    <test started-at="2025-03-30T18:59:37 IST" name="Contacts Page Test" finished-at="2025-03-30T19:01:04 IST" duration-ms="87072">
+    <test started-at="2025-04-01T22:47:46 IST" name="Contacts Page Test" finished-at="2025-04-01T22:50:12 IST" duration-ms="145098">
       <class name="com.qa.crm.tests.ContactsPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.ContactsPageTest@e344ad3]" started-at="2025-03-30T18:59:37 IST" name="setup" finished-at="2025-03-30T19:00:08 IST" duration-ms="31816" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.ContactsPageTest@de18f63]" started-at="2025-04-01T22:47:47 IST" name="setup" finished-at="2025-04-01T22:48:40 IST" duration-ms="52980" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -186,15 +378,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="homeSetup()[pri:0, instance:com.qa.crm.tests.ContactsPageTest@e344ad3]" started-at="2025-03-30T19:00:08 IST" name="homeSetup" finished-at="2025-03-30T19:00:14 IST" duration-ms="5936" status="PASS">
+        <test-method is-config="true" signature="homeSetup()[pri:0, instance:com.qa.crm.tests.ContactsPageTest@de18f63]" started-at="2025-04-01T22:48:40 IST" name="homeSetup" finished-at="2025-04-01T22:48:57 IST" duration-ms="17347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeSetup -->
-        <test-method signature="verifyContactsPageLabelTest()[pri:1, instance:com.qa.crm.tests.ContactsPageTest@e344ad3]" started-at="2025-03-30T19:00:14 IST" name="verifyContactsPageLabelTest" finished-at="2025-03-30T19:00:15 IST" duration-ms="170" status="PASS">
+        <test-method signature="verifyContactsPageLabelTest()[pri:1, instance:com.qa.crm.tests.ContactsPageTest@de18f63]" started-at="2025-04-01T22:48:57 IST" name="verifyContactsPageLabelTest" finished-at="2025-04-01T22:49:00 IST" duration-ms="2704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactsPageLabelTest -->
-        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@e344ad3]" started-at="2025-03-30T19:00:19 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-03-30T19:00:28 IST" duration-ms="8435" status="PASS">
+        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@de18f63]" started-at="2025-04-01T22:49:02 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-04-01T22:49:16 IST" duration-ms="14193" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -215,7 +407,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@e344ad3]" started-at="2025-03-30T19:00:28 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-03-30T19:00:34 IST" duration-ms="6473" status="PASS">
+        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@de18f63]" started-at="2025-04-01T22:49:16 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-04-01T22:49:29 IST" duration-ms="12984" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -236,7 +428,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@e344ad3]" started-at="2025-03-30T19:00:34 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-03-30T19:00:41 IST" duration-ms="6566" status="PASS">
+        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@de18f63]" started-at="2025-04-01T22:49:29 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-04-01T22:49:42 IST" duration-ms="12889" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -257,7 +449,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@e344ad3]" started-at="2025-03-30T19:00:41 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-03-30T19:00:49 IST" duration-ms="8255" status="PASS">
+        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@de18f63]" started-at="2025-04-01T22:49:42 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-04-01T22:49:53 IST" duration-ms="10173" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -273,7 +465,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@e344ad3]" started-at="2025-03-30T19:00:49 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-03-30T19:00:57 IST" duration-ms="7690" status="PASS">
+        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@de18f63]" started-at="2025-04-01T22:49:53 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-04-01T22:50:02 IST" duration-ms="9473" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -289,7 +481,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@e344ad3]" started-at="2025-03-30T19:00:57 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-03-30T19:01:04 IST" duration-ms="6931" status="PASS">
+        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@de18f63]" started-at="2025-04-01T22:50:02 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-04-01T22:50:11 IST" duration-ms="9416" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -305,7 +497,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.ContactsPageTest@e344ad3]" started-at="2025-03-30T19:01:04 IST" name="tearDown" finished-at="2025-03-30T19:01:04 IST" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.ContactsPageTest@de18f63]" started-at="2025-04-01T22:50:11 IST" name="tearDown" finished-at="2025-04-01T22:50:12 IST" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

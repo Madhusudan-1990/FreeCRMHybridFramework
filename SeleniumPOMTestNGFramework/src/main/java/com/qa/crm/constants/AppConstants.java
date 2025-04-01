@@ -21,7 +21,8 @@ public class AppConstants
 	public static final long DEFAULT_THREAD_SLEEP_TIME = 5000;
 	
 	//*********************************Sheet  Names*************************//
-	public static  final String CONT_SHEET_NAME = "contacts";
+	public static  final String CONTACT_SHEET_NAME = "contacts";
+	public static  final String FORM_SHEET_NAME = "forms";
 	
 	
 }

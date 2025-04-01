@@ -31,13 +31,7 @@ public class ContactsPageTest extends BaseTest
 	@DataProvider
 	public Object[][] getCRMTestData() 
 	{
-//		return new Object[][]
-//				{
-//					{"Joe","Simon","Amazon"},
-//					{"Bret","Lee","Flipkart"},
-//					{"Andy","Flower","Google"}
-//				};
-		return ExcelUtil.getTestData(AppConstants.CONT_SHEET_NAME);
+		return ExcelUtil.getTestData(AppConstants.CONTACT_SHEET_NAME);
 	}
 	
 	@Test(priority = 2,dataProvider = "getCRMTestData")

@@ -1,0 +1,11 @@
+package com.qa.crm.factory;
+
+import java.util.Properties;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class OptionsManager 
+{
+	private Properties prop;
+	private ChromeOptions co;
+}

@@ -14,7 +14,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import com.qa.crm.errors.AppError;
 import com.qa.crm.exceptions.BrowserException;
-
+import com.qa.crm.exceptions.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory 
@@ -26,19 +26,24 @@ public class DriverFactory
 	 */
 	WebDriver driver;
 	Properties prop;
+	public static String isHighlight;
 	public WebDriver initDriver(Properties prop)
 	{
+		isHighlight = prop.getProperty("highlight");
+		
+		OptionsManager optionManager = new OptionsManager(prop);
+		
 		String browserName = prop.getProperty("browser");
 		System.out.println("Browser Name : "+browserName);
 		switch(browserName.toLowerCase().trim())
 		{
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(optionManager.getChromeOptions());
 			break;
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(optionManager.getFirefoxOptions());
 			break;
 		case "safari":
 			WebDriverManager.safaridriver().setup();
@@ -50,9 +55,9 @@ public class DriverFactory
 			break;		
 		case "edge":
 			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			driver = new EdgeDriver(optionManager.getEdgeOptions());
 			break;	
-			
+
 		default:
 			System.out.println(AppError.INVALID_BROWSER_MSG + browserName + "is invalid browser");
 			throw new BrowserException(AppError.INVALID_BROWSER_MSG + browserName);	
@@ -63,21 +68,57 @@ public class DriverFactory
 		driver.get(prop.getProperty("url"));
 		return driver;
 	}
-	
+
 	/**
 	 * This method is used to initialize the property from the config file.
 	 * @return
 	 */
+	
+	//mvn clean install -Denv="qa"
 	public Properties initProp()
 	{
 		prop = new Properties();
+		FileInputStream fis = null;
+
+		String envName = System.getProperty("env");
+		System.out.println("Running tests on env : " +envName);
 		try {
-			FileInputStream fis = new FileInputStream("./src/test/resources/config/config.properties");
+			if(envName==null)
+			{
+
+				fis = new FileInputStream("./src/test/resources/config/config.properties");
+			}
+			else
+			{
+				switch(envName)
+				{
+				case "qa":
+					fis = new FileInputStream("./src/test/resources/config/qa.config.properties");
+					break;
+				case "dev":
+					fis = new FileInputStream("./src/test/resources/config/dev.config.properties");
+					break;
+				case "stage":
+					fis = new FileInputStream("./src/test/resources/config/stage.config.properties");
+					break;
+				case "uat":
+					fis = new FileInputStream("./src/test/resources/config/uat.config.properties");
+					break;
+				case "prod":
+					fis = new FileInputStream("./src/test/resources/config/config.properties");
+					break;
+				default:
+					System.out.println("Please provide valid env name..." +envName);
+					throw new FrameworkException("INVALID ENV NAME");
+				}
+			}
 			prop.load(fis);
-		} catch (FileNotFoundException e) {
+		}
+		catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (IOException e) {
+		}
+		catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

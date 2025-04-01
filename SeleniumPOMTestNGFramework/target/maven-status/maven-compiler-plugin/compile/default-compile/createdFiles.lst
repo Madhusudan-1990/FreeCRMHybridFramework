@@ -1,0 +1,14 @@
+com\qa\crm\exceptions\BrowserException.class
+com\qa\crm\utils\JavaScriptUtil.class
+com\qa\crm\pages\HomePage.class
+com\qa\crm\utils\ElementUtil.class
+com\qa\crm\pages\ContactsPage.class
+com\qa\crm\pages\FormPage.class
+com\qa\crm\pages\PersonDetailsPage.class
+com\qa\crm\errors\AppError.class
+com\qa\crm\exceptions\FrameworkException.class
+com\qa\crm\constants\AppConstants.class
+com\qa\crm\exceptions\ElementException.class
+com\qa\crm\utils\ExcelUtil.class
+com\qa\crm\factory\DriverFactory.class
+com\qa\crm\pages\LoginPage.class

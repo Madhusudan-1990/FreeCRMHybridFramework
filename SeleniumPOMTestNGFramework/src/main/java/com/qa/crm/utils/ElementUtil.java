@@ -30,12 +30,12 @@ public class ElementUtil {
 
 	private WebDriver driver;
 	private Actions act;
-//	private JavaScriptUtil jsUtil;
+	private JavaScriptUtil jsUtil;
 
 	public ElementUtil(WebDriver driver) {
 		this.driver = driver;
 		act = new Actions(driver);
-//		jsUtil = new JavaScriptUtil();
+		jsUtil = new JavaScriptUtil(driver);
 	}
 
 	@Step("clicking on element using locator: {0}")
@@ -69,9 +69,9 @@ public class ElementUtil {
 	
 	
 	private void checkElementHighlight(WebElement element) {
-//		if(Boolean.parseBoolean(DriverFactory.isHighlight)) {
-//			jsUtil.flash(element);
-//		}
+		if(Boolean.parseBoolean(DriverFactory.isHighlight)) {
+			jsUtil.flash(element);
+		}
 	}
 	
 	public WebElement getElement(By locator) {
