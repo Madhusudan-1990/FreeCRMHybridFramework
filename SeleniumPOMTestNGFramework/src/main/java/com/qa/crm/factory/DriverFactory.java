@@ -27,6 +27,8 @@ public class DriverFactory
 	WebDriver driver;
 	Properties prop;
 	public static String isHighlight;
+	//Thread Local class is used to distribute the driver across all the threads.
+	public static ThreadLocal<WebDriver>tlDriver = new ThreadLocal<WebDriver>();
 	public WebDriver initDriver(Properties prop)
 	{
 		isHighlight = prop.getProperty("highlight");
@@ -39,23 +41,23 @@ public class DriverFactory
 		{
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(optionManager.getChromeOptions());
+			tlDriver.set(new ChromeDriver(optionManager.getChromeOptions()));
 			break;
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver(optionManager.getFirefoxOptions());
+			tlDriver.set(new FirefoxDriver(optionManager.getFirefoxOptions()));
 			break;
 		case "safari":
 			WebDriverManager.safaridriver().setup();
-			driver = new SafariDriver();
+			tlDriver.set(new SafariDriver());
 			break;
 		case "ie":
 			WebDriverManager.iedriver().setup();
-			driver = new InternetExplorerDriver();
+			tlDriver.set(new InternetExplorerDriver());
 			break;		
 		case "edge":
 			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver(optionManager.getEdgeOptions());
+			tlDriver.set(new EdgeDriver(optionManager.getEdgeOptions()));
 			break;	
 
 		default:
@@ -63,10 +65,19 @@ public class DriverFactory
 			throw new BrowserException(AppError.INVALID_BROWSER_MSG + browserName);	
 
 		}
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.get(prop.getProperty("url"));
-		return driver;
+		getDriver().manage().window().maximize();
+		getDriver().manage().deleteAllCookies();
+		getDriver().get(prop.getProperty("url"));
+		return getDriver();
+	}
+	
+	/**
+	 * This method is used to return the driver  with threadlocal
+	 * @return
+	 */
+	public static WebDriver getDriver()
+	{
+		return tlDriver.get();
 	}
 
 	/**

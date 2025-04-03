@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="4" parallel="tests" name="Failed suite [CRM App Test Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
-  <test thread-count="4" parallel="tests" name="Forms Page Test(failed)" verbose="4">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="4" parallel="tests" name="Home Page Test(failed)" verbose="4">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.qa.crm.tests.FormPageTest">
+      <class name="com.qa.crm.tests.HomePageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="homeSetup"/>
           <include name="setup"/>
-          <include name="formSubmitPageTest" invocation-numbers="0 1 2"/>
-          <include name="formSetup"/>
+          <include name="homePageHeadersCountTest"/>
         </methods>
-      </class> <!-- com.qa.crm.tests.FormPageTest -->
+      </class> <!-- com.qa.crm.tests.HomePageTest -->
     </classes>
-  </test> <!-- Forms Page Test(failed) -->
+  </test> <!-- Home Page Test(failed) -->
 </suite> <!-- Failed suite [CRM App Test Regression Suite] -->
