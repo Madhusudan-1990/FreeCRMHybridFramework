@@ -5,11 +5,14 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qa.crm.base.BaseTest;
 import com.qa.crm.constants.AppConstants;
-
+import com.qa.crm.listeners.AnnotationTransformer;
+import com.qa.crm.listeners.ExtentReportListener;
+@Listeners({AnnotationTransformer.class,ExtentReportListener.class})
 public class HomePageTest extends BaseTest
 {
 	@BeforeClass

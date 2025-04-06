@@ -1,17 +1,21 @@
 package com.qa.crm.factory;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
+import org.openqa.selenium.io.FileHandler;
 import com.qa.crm.errors.AppError;
 import com.qa.crm.exceptions.BrowserException;
 import com.qa.crm.exceptions.*;
@@ -134,5 +138,22 @@ public class DriverFactory
 			e.printStackTrace();
 		}
 		return prop;
+	}
+	
+	/**
+	 * take screenshot
+	 */
+
+	public static String getScreenshot(String methodName) {
+		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);// temp dir
+		String path = System.getProperty("user.dir") + "/screenshot/" + methodName + "_" + System.currentTimeMillis()+ ".png";
+		File destination = new File(path);
+		try {
+			FileUtils.copyFile(srcFile, destination);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return path;
 	}
 }

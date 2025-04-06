@@ -1,11 +1,13 @@
 package com.qa.crm.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import com.qa.crm.base.BaseTest;
 import com.qa.crm.constants.AppConstants;
-
+import com.qa.crm.listeners.AnnotationTransformer;
+import com.qa.crm.listeners.ExtentReportListener;
+@Listeners({AnnotationTransformer.class,ExtentReportListener.class})
 public class LoginPageTest extends BaseTest
 {
 	@Test
