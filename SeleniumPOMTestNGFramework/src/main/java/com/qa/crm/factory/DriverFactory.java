@@ -20,6 +20,7 @@ import com.qa.crm.errors.AppError;
 import com.qa.crm.exceptions.BrowserException;
 import com.qa.crm.exceptions.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Step;
 
 public class DriverFactory 
 {
@@ -33,6 +34,8 @@ public class DriverFactory
 	public static String isHighlight;
 	//Thread Local class is used to distribute the driver across all the threads.
 	public static ThreadLocal<WebDriver>tlDriver = new ThreadLocal<WebDriver>();
+	
+	@Step("Initialize WebDriver with prop : {0}")
 	public WebDriver initDriver(Properties prop)
 	{
 		isHighlight = prop.getProperty("highlight");

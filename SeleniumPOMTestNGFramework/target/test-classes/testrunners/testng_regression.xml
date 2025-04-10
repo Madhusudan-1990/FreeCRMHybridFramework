@@ -3,6 +3,7 @@
 <suite name="CRM App Test Regression Suite" parallel="tests" thread-count="4" verbose="4">
   <listeners>
   	<listener class-name="com.qa.crm.listeners.ExtentReportListener"/>
+  	<listener class-name="com.qa.crm.listeners.TestAllureListener"/>
   	<listener class-name="com.qa.crm.listeners.AnnotationTransformer"/>
   </listeners>
   <test name="Login Page Test">

@@ -16,6 +16,8 @@ import com.qa.crm.pages.HomePage;
 import com.qa.crm.pages.LoginPage;
 import com.qa.crm.pages.PersonDetailsPage;
 
+import io.qameta.allure.Step;
+
 public class BaseTest 
 {
 	
@@ -31,7 +33,7 @@ public class BaseTest
 	
 	protected SoftAssert softAssert;
 	
-	
+	@Step("Setup with browser : {0}")
 	@BeforeTest
 	@Parameters({"browser"})
 	public void setup(@Optional String browserName)
@@ -49,6 +51,7 @@ public class BaseTest
 		softAssert = new  SoftAssert();
 	}
 	
+	@Step("Close the browser")
 	@AfterTest
 	public void tearDown()
 	{

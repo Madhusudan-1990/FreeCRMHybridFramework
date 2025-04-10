@@ -352,7 +352,7 @@ public class ElementUtil {
 		checkElementHighlight(element);
 		return element;
 	}
-
+	@Step("waiting for webelement using locator: {0} within timeout : {1} within intervalTime : {2}")
 	public WebElement waitForElementVisible(By locator, int timeOut, int intervalTime) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut), Duration.ofSeconds(intervalTime));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));

@@ -1,30 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-06T22:37:20 IST" name="Default suite" finished-at="2025-04-06T22:38:28 IST" duration-ms="67755">
+  <suite started-at="2025-04-10T15:27:58 IST" name="CRM App Test Regression Suite" finished-at="2025-04-10T15:29:35 IST" duration-ms="97287">
     <groups>
     </groups>
-    <test started-at="2025-04-06T22:37:20 IST" name="Default test" finished-at="2025-04-06T22:38:28 IST" duration-ms="67755">
-      <class name="com.qa.crm.tests.ContactsPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.ContactsPageTest@546621c4]" started-at="2025-04-06T22:37:20 IST" name="setup" finished-at="2025-04-06T22:37:29 IST" duration-ms="9539" status="PASS">
+    <test started-at="2025-04-10T15:27:58 IST" name="Login Page Test" finished-at="2025-04-10T15:28:54 IST" duration-ms="55994">
+      <class name="com.qa.crm.tests.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.LoginPageTest@217bf99e]" started-at="2025-04-10T15:27:58 IST" name="setup" finished-at="2025-04-10T15:28:30 IST" duration-ms="32396" status="PASS">
           <params>
             <param index="0">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[edge]]>
+              </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="homeSetup()[pri:0, instance:com.qa.crm.tests.ContactsPageTest@546621c4]" started-at="2025-04-06T22:37:29 IST" name="homeSetup" finished-at="2025-04-06T22:37:33 IST" duration-ms="3197" status="PASS">
+        <test-method signature="bellIconExist()[pri:0, instance:com.qa.crm.tests.LoginPageTest@217bf99e]" started-at="2025-04-10T15:28:30 IST" name="bellIconExist" finished-at="2025-04-10T15:28:32 IST" duration-ms="1639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bellIconExist -->
+        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.crm.tests.LoginPageTest@217bf99e]" started-at="2025-04-10T15:28:33 IST" name="loginPageTitleTest" finished-at="2025-04-10T15:28:36 IST" duration-ms="2182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method signature="loginPageURLTest()[pri:0, instance:com.qa.crm.tests.LoginPageTest@217bf99e]" started-at="2025-04-10T15:28:36 IST" name="loginPageURLTest" finished-at="2025-04-10T15:28:36 IST" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageURLTest -->
+        <test-method signature="loginTest()[pri:2147483647, instance:com.qa.crm.tests.LoginPageTest@217bf99e]" started-at="2025-04-10T15:28:36 IST" name="loginTest" finished-at="2025-04-10T15:28:40 IST" duration-ms="3764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.LoginPageTest@217bf99e]" started-at="2025-04-10T15:28:40 IST" name="tearDown" finished-at="2025-04-10T15:28:54 IST" duration-ms="13865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm.tests.LoginPageTest -->
+    </test> <!-- Login Page Test -->
+    <test started-at="2025-04-10T15:27:58 IST" name="Home Page Test" finished-at="2025-04-10T15:28:53 IST" duration-ms="55137">
+      <class name="com.qa.crm.tests.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.HomePageTest@1984212d]" started-at="2025-04-10T15:27:58 IST" name="setup" finished-at="2025-04-10T15:28:38 IST" duration-ms="39559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="homeSetup()[pri:0, instance:com.qa.crm.tests.HomePageTest@1984212d]" started-at="2025-04-10T15:28:38 IST" name="homeSetup" finished-at="2025-04-10T15:28:39 IST" duration-ms="952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeSetup -->
-        <test-method signature="verifyContactsPageLabelTest()[pri:1, instance:com.qa.crm.tests.ContactsPageTest@546621c4]" started-at="2025-04-06T22:37:33 IST" name="verifyContactsPageLabelTest" finished-at="2025-04-06T22:37:33 IST" duration-ms="501" status="PASS">
+        <test-method signature="homePageTitleTest()[pri:1, instance:com.qa.crm.tests.HomePageTest@1984212d]" started-at="2025-04-10T15:28:39 IST" name="homePageTitleTest" finished-at="2025-04-10T15:28:39 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method signature="isHomePageIconTest()[pri:2, instance:com.qa.crm.tests.HomePageTest@1984212d]" started-at="2025-04-10T15:28:39 IST" name="isHomePageIconTest" finished-at="2025-04-10T15:28:42 IST" duration-ms="3035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHomePageIconTest -->
+        <test-method signature="isCalendarPageIconTest()[pri:3, instance:com.qa.crm.tests.HomePageTest@1984212d]" started-at="2025-04-10T15:28:42 IST" name="isCalendarPageIconTest" finished-at="2025-04-10T15:28:42 IST" duration-ms="410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCalendarPageIconTest -->
+        <test-method signature="isContactsPageIconTest()[pri:4, instance:com.qa.crm.tests.HomePageTest@1984212d]" started-at="2025-04-10T15:28:42 IST" name="isContactsPageIconTest" finished-at="2025-04-10T15:28:44 IST" duration-ms="2370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isContactsPageIconTest -->
+        <test-method signature="homePageHeadersCountTest()[pri:5, instance:com.qa.crm.tests.HomePageTest@1984212d]" started-at="2025-04-10T15:28:44 IST" name="homePageHeadersCountTest" finished-at="2025-04-10T15:28:45 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageHeadersCountTest -->
+        <test-method signature="homePageHeadersTest()[pri:6, instance:com.qa.crm.tests.HomePageTest@1984212d]" started-at="2025-04-10T15:28:45 IST" name="homePageHeadersTest" finished-at="2025-04-10T15:28:45 IST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageHeadersTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.HomePageTest@1984212d]" started-at="2025-04-10T15:28:45 IST" name="tearDown" finished-at="2025-04-10T15:28:53 IST" duration-ms="8303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm.tests.HomePageTest -->
+    </test> <!-- Home Page Test -->
+    <test started-at="2025-04-10T15:27:58 IST" name="Forms Page Test" finished-at="2025-04-10T15:29:30 IST" duration-ms="91542">
+      <class name="com.qa.crm.tests.FormPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@cedee22]" started-at="2025-04-10T15:27:58 IST" name="setup" finished-at="2025-04-10T15:28:24 IST" duration-ms="26315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="formSetup()[pri:0, instance:com.qa.crm.tests.FormPageTest@cedee22]" started-at="2025-04-10T15:28:24 IST" name="formSetup" finished-at="2025-04-10T15:28:47 IST" duration-ms="22380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formSetup -->
+        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@cedee22]" started-at="2025-04-10T15:28:47 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-04-10T15:29:03 IST" duration-ms="15557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TOM]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GSDFSDCSXCC]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formSubmitPageTest -->
+        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@cedee22]" started-at="2025-04-10T15:29:03 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-04-10T15:29:16 IST" duration-ms="13229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ASDASDASD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formSubmitPageTest -->
+        <test-method signature="formSubmitPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.crm.tests.FormPageTest@cedee22]" started-at="2025-04-10T15:29:16 IST" name="formSubmitPageTest" data-provider="getFormData" finished-at="2025-04-10T15:29:29 IST" duration-ms="13213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mukta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing567]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GDFSDFFFF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formSubmitPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.FormPageTest@cedee22]" started-at="2025-04-10T15:29:29 IST" name="tearDown" finished-at="2025-04-10T15:29:30 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm.tests.FormPageTest -->
+    </test> <!-- Forms Page Test -->
+    <test started-at="2025-04-10T15:27:58 IST" name="Contacts Page Test" finished-at="2025-04-10T15:29:35 IST" duration-ms="97264">
+      <class name="com.qa.crm.tests.ContactsPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm.tests.ContactsPageTest@60e06f7d]" started-at="2025-04-10T15:27:58 IST" name="setup" finished-at="2025-04-10T15:28:18 IST" duration-ms="19816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="homeSetup()[pri:0, instance:com.qa.crm.tests.ContactsPageTest@60e06f7d]" started-at="2025-04-10T15:28:18 IST" name="homeSetup" finished-at="2025-04-10T15:28:44 IST" duration-ms="25818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeSetup -->
+        <test-method signature="verifyContactsPageLabelTest()[pri:1, instance:com.qa.crm.tests.ContactsPageTest@60e06f7d]" started-at="2025-04-10T15:28:44 IST" name="verifyContactsPageLabelTest" finished-at="2025-04-10T15:28:45 IST" duration-ms="311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactsPageLabelTest -->
-        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@546621c4]" started-at="2025-04-06T22:37:38 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-04-06T22:37:45 IST" duration-ms="7726" status="PASS">
+        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@60e06f7d]" started-at="2025-04-10T15:28:47 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-04-10T15:28:56 IST" duration-ms="8876" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +215,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@546621c4]" started-at="2025-04-06T22:37:46 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-04-06T22:37:55 IST" duration-ms="9607" status="PASS">
+        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@60e06f7d]" started-at="2025-04-10T15:28:56 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-04-10T15:29:05 IST" duration-ms="9165" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,7 +236,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@546621c4]" started-at="2025-04-06T22:37:55 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-04-06T22:38:02 IST" duration-ms="6632" status="PASS">
+        <test-method signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.crm.tests.ContactsPageTest@60e06f7d]" started-at="2025-04-10T15:29:05 IST" name="createNewContactTest" data-provider="getCRMTestData" finished-at="2025-04-10T15:29:12 IST" duration-ms="6935" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,7 +257,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactTest -->
-        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@546621c4]" started-at="2025-04-06T22:38:02 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-04-06T22:38:10 IST" duration-ms="8180" status="PASS">
+        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@60e06f7d]" started-at="2025-04-10T15:29:12 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-04-10T15:29:21 IST" duration-ms="8757" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -103,7 +273,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@546621c4]" started-at="2025-04-06T22:38:10 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-04-06T22:38:19 IST" duration-ms="9312" status="PASS">
+        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@60e06f7d]" started-at="2025-04-10T15:29:21 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-04-10T15:29:28 IST" duration-ms="7071" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,7 +289,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@546621c4]" started-at="2025-04-06T22:38:19 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-04-06T22:38:27 IST" duration-ms="7620" status="PASS">
+        <test-method signature="searchTest(java.lang.String,java.lang.String)[pri:3, instance:com.qa.crm.tests.ContactsPageTest@60e06f7d]" started-at="2025-04-10T15:29:28 IST" name="searchTest" data-provider="getSearchData" finished-at="2025-04-10T15:29:35 IST" duration-ms="6891" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,11 +305,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.ContactsPageTest@546621c4]" started-at="2025-04-06T22:38:27 IST" name="tearDown" finished-at="2025-04-06T22:38:28 IST" duration-ms="671" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm.tests.ContactsPageTest@60e06f7d]" started-at="2025-04-10T15:29:35 IST" name="tearDown" finished-at="2025-04-10T15:29:35 IST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.crm.tests.ContactsPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Contacts Page Test -->
+  </suite> <!-- CRM App Test Regression Suite -->
 </testng-results>
