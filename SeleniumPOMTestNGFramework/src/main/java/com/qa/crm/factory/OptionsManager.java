@@ -24,7 +24,6 @@ public class OptionsManager
 		{
 			System.out.println(".....Running Chrome in headless mode.....");
 			co.addArguments("--headless", "--disable-gpu", "--window-size=1920,1080");
-			co.addArguments("--remote-allow-origins=*");
 		}
 		if(Boolean.parseBoolean(prop.getProperty("incognito")))
 		{
