@@ -1,6 +1,0 @@
-package com.qa.crm.errors;
-
-public class AppError 
-{
-	public static final String INVALID_BROWSER_MSG="Cogmento CRM";
-}

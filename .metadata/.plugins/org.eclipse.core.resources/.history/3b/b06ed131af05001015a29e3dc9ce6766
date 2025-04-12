@@ -1,9 +1,0 @@
-package com.qa.crm.factory;
-
-public class DriverFactory 
-{
-	/*
-	 * Driver Factory class has initDriver method to initialize the driver.
-	 */
-
-}

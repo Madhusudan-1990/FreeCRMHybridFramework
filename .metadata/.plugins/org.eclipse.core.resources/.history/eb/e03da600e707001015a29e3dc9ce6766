@@ -1,8 +1,0 @@
-package com.qa.crm.tests;
-
-import com.qa.crm.base.BaseTest;
-
-public class HomePageTest extends BaseTest
-{
-
-}
