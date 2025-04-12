@@ -1,9 +1,0 @@
-browser = opera
-url = https://ui.cogmento.com/
-
-username = madhusudanjayasimha1990@gmail.com
-password = Madhu@1990
-
-headless = true
-incognito = true
-highlight = true

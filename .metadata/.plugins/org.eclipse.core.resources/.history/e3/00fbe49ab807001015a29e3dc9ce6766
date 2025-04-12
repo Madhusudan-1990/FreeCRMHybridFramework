@@ -1,6 +1,0 @@
-package com.qa.crm.constants;
-
-public class AppConstants 
-{
-	public final String LOGIN_PAGE_TITLE="Cogmento CRM";
-}

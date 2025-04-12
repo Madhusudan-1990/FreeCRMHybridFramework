@@ -1,8 +1,0 @@
-package com.qa.crm.pages;
-
-import org.openqa.selenium.By;
-
-public class HomePage 
-{
-	By homeIcon = By.xpath("");
-}
