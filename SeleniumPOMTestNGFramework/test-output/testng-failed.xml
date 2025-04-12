@@ -6,6 +6,19 @@
     <listener class-name="com.qa.crm.listeners.TestAllureListener"/>
     <listener class-name="com.qa.crm.listeners.AnnotationTransformer"/>
   </listeners>
+  <test thread-count="4" parallel="tests" name="Forms Page Test(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.crm.tests.FormPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="formSubmitPageTest" invocation-numbers="0 0 0 0 1 1 1 1 2 2 2 2"/>
+          <include name="formSetup"/>
+        </methods>
+      </class> <!-- com.qa.crm.tests.FormPageTest -->
+    </classes>
+  </test> <!-- Forms Page Test(failed) -->
   <test thread-count="4" parallel="tests" name="Home Page Test(failed)" verbose="4">
     <parameter name="browser" value="firefox"/>
     <classes>
@@ -13,6 +26,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="homeSetup"/>
+          <include name="homePageHeadersTest"/>
           <include name="setup"/>
           <include name="homePageHeadersCountTest"/>
         </methods>

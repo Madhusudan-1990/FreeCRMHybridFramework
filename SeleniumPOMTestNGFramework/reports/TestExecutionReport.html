@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Open Cart Automation Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 12, 2025 05:20:57 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 12, 2025 05:36:33 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -72,6 +77,8 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,7 +86,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">CRMAppTestRegressionSuite</a><a class="dropdown-item" href="#">FormPageTest</a><a class="dropdown-item" href="#">LoginPageTest</a><a class="dropdown-item" href="#">HomePageTest</a><a class="dropdown-item" href="#">ContactsPageTest</a>
+<a class="dropdown-item" href="#">ContactsPageTest</a><a class="dropdown-item" href="#">LoginPageTest</a><a class="dropdown-item" href="#">HomePageTest</a><a class="dropdown-item" href="#">FormPageTest</a><a class="dropdown-item" href="#">CRMAppTestRegressionSuite</a>
 </ul>
 </li>
 </ul>
@@ -87,12 +94,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag="HomePageTest CRMAppTestRegressionSuite"
+          tag="CRMAppTestRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">homePageTitleTest</p>
+            <p class="name">bellIconExist</p>
             <p class="text-sm">
-              <span>5:21:31 pm</span> / <span>00:00:00:262</span>
+              <span>5:37:47 pm</span> / <span>00:00:00:512</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,16 +107,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">homePageTitleTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:31 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:31 pm</span>
-<span class='badge badge-default'>00:00:00:262</span>
+<h5 class="test-status text-pass">bellIconExist</h5>
+<span class='badge badge-success'>04.12.2025 5:37:47 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:47 pm</span>
+<span class='badge badge-default'>00:00:00:512</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
-<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -118,7 +125,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:31 pm</td>
+        <td>5:37:47 pm</td>
         <td>
           Test passed
         </td>
@@ -133,9 +140,9 @@
           tag="CRMAppTestRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">bellIconExist</p>
+            <p class="name">loginPageTitleTest</p>
             <p class="text-sm">
-              <span>5:21:31 pm</span> / <span>00:00:00:483</span>
+              <span>5:37:48 pm</span> / <span>00:00:00:093</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -143,10 +150,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">bellIconExist</h5>
-<span class='badge badge-success'>04.12.2025 5:21:31 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:31 pm</span>
-<span class='badge badge-default'>00:00:00:483</span>
+<h5 class="test-status text-pass">loginPageTitleTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:48 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:48 pm</span>
+<span class='badge badge-default'>00:00:00:093</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -161,7 +168,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:31 pm</td>
+        <td>5:37:48 pm</td>
         <td>
           Test passed
         </td>
@@ -173,12 +180,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="3"
           author=""
-          tag="HomePageTest CRMAppTestRegressionSuite"
+          tag="CRMAppTestRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">isHomePageIconTest</p>
+            <p class="name">loginPageURLTest</p>
             <p class="text-sm">
-              <span>5:21:32 pm</span> / <span>00:00:02:146</span>
+              <span>5:37:48 pm</span> / <span>00:00:00:190</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -186,16 +193,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">isHomePageIconTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:32 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:34 pm</span>
-<span class='badge badge-default'>00:00:02:146</span>
+<h5 class="test-status text-pass">loginPageURLTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:48 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:48 pm</span>
+<span class='badge badge-default'>00:00:00:190</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
-<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -204,7 +211,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:34 pm</td>
+        <td>5:37:48 pm</td>
         <td>
           Test passed
         </td>
@@ -219,9 +226,9 @@
           tag="CRMAppTestRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">loginPageTitleTest</p>
+            <p class="name">loginTest</p>
             <p class="text-sm">
-              <span>5:21:32 pm</span> / <span>00:00:00:080</span>
+              <span>5:37:48 pm</span> / <span>00:00:01:472</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -229,10 +236,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">loginPageTitleTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:32 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:32 pm</span>
-<span class='badge badge-default'>00:00:00:080</span>
+<h5 class="test-status text-pass">loginTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:48 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:50 pm</span>
+<span class='badge badge-default'>00:00:01:472</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -247,7 +254,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:32 pm</td>
+        <td>5:37:50 pm</td>
         <td>
           Test passed
         </td>
@@ -257,369 +264,489 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="5"
-          author=""
-          tag="CRMAppTestRegressionSuite LoginPageTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">loginPageURLTest</p>
-            <p class="text-sm">
-              <span>5:21:32 pm</span> / <span>00:00:00:056</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">loginPageURLTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:32 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:32 pm</span>
-<span class='badge badge-default'>00:00:00:056</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:32 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="6"
-          author=""
-          tag="CRMAppTestRegressionSuite LoginPageTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">loginTest</p>
-            <p class="text-sm">
-              <span>5:21:32 pm</span> / <span>00:00:01:006</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">loginTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:32 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:33 pm</span>
-<span class='badge badge-default'>00:00:01:006</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:33 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="7"
-          author=""
-          tag="HomePageTest CRMAppTestRegressionSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">isCalendarPageIconTest</p>
-            <p class="text-sm">
-              <span>5:21:34 pm</span> / <span>00:00:00:145</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">isCalendarPageIconTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:34 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:34 pm</span>
-<span class='badge badge-default'>00:00:00:145</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
-<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:34 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="8"
-          author=""
-          tag="HomePageTest CRMAppTestRegressionSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">isContactsPageIconTest</p>
-            <p class="text-sm">
-              <span>5:21:34 pm</span> / <span>00:00:00:051</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">isContactsPageIconTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:34 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:34 pm</span>
-<span class='badge badge-default'>00:00:00:051</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
-<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:34 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="9"
-          author=""
-          tag="HomePageTest CRMAppTestRegressionSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">homePageHeadersCountTest</p>
-            <p class="text-sm">
-              <span>5:21:34 pm</span> / <span>00:00:00:065</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">homePageHeadersCountTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:34 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:34 pm</span>
-<span class='badge badge-default'>00:00:00:065</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
-<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:34 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="10"
-          author=""
-          tag="HomePageTest CRMAppTestRegressionSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">homePageHeadersTest</p>
-            <p class="text-sm">
-              <span>5:21:34 pm</span> / <span>00:00:00:193</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">homePageHeadersTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:34 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:34 pm</span>
-<span class='badge badge-default'>00:00:00:193</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
-<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:34 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="11"
-          author=""
-          tag="CRMAppTestRegressionSuite ContactsPageTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyContactsPageLabelTest</p>
-            <p class="text-sm">
-              <span>5:21:38 pm</span> / <span>00:00:00:138</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyContactsPageLabelTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:38 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:39 pm</span>
-<span class='badge badge-default'>00:00:00:138</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
-<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:39 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="12"
-          author=""
-          tag="CRMAppTestRegressionSuite ContactsPageTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">createNewContactTest</p>
-            <p class="text-sm">
-              <span>5:21:41 pm</span> / <span>00:00:08:381</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">createNewContactTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:41 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:50 pm</span>
-<span class='badge badge-default'>00:00:08:381</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
-<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:50 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="13"
+        <li class="test-item"  status="skip" test-id="5"
           author=""
           tag="CRMAppTestRegressionSuite FormPageTest"
           device="">
           <div class="test-detail">
             <p class="name">formSubmitPageTest</p>
             <p class="text-sm">
-              <span>5:21:41 pm</span> / <span>00:00:14:335</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>5:37:49 pm</span> / <span>00:00:01:538</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">formSubmitPageTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:41 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:55 pm</span>
-<span class='badge badge-default'>00:00:14:335</span>
+<h5 class="test-status text-skip">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:49 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:51 pm</span>
+<span class='badge badge-default'>00:00:01:538</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">FormPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:37:51 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="6"
+          author=""
+          tag="CRMAppTestRegressionSuite FormPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">formSubmitPageTest</p>
+            <p class="text-sm">
+              <span>5:37:51 pm</span> / <span>00:00:00:046</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:51 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:51 pm</span>
+<span class='badge badge-default'>00:00:00:046</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">FormPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:37:51 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="7"
+          author=""
+          tag="CRMAppTestRegressionSuite FormPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">formSubmitPageTest</p>
+            <p class="text-sm">
+              <span>5:37:51 pm</span> / <span>00:00:00:026</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:51 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:51 pm</span>
+<span class='badge badge-default'>00:00:00:026</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">FormPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:37:51 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="8"
+          author=""
+          tag="CRMAppTestRegressionSuite FormPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">formSubmitPageTest</p>
+            <p class="text-sm">
+              <span>5:37:51 pm</span> / <span>00:00:00:030</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:51 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:51 pm</span>
+<span class='badge badge-default'>00:00:00:030</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">FormPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:37:51 pm</td>
+        <td>
+          Test failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:37:53 pm</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='ui linkedin button']"}
+  (Session info: chrome=135.0.7049.43)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a712dffa3d5d0abe538c8465ecee857a, findElement {value=//button[@class='ui linkedin button'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.43, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57782/devtoo..., se:cdpVersion: 135.0.7049.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a712dffa3d5d0abe538c8465ecee857a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.qa.crm.utils.ElementUtil.getElement(ElementUtil.java:78)
+	at com.qa.crm.utils.ElementUtil.doClick(ElementUtil.java:43)
+	at com.qa.crm.pages.FormPage.addForm(FormPage.java:31)
+	at com.qa.crm.tests.FormPageTest.formSubmitPageTest(FormPageTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Dell\Downloads\Automation\AutomationFramework\workspace\SeleniumPOMTestNGFramework/screenshot/formSubmitPageTest_1744459673265.png' src="C:\Users\Dell\Downloads\Automation\AutomationFramework\workspace\SeleniumPOMTestNGFramework/screenshot/formSubmitPageTest_1744459673265.png">
+    <div class="title">formSubmitPageTest</div>
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="9"
+          author=""
+          tag="CRMAppTestRegressionSuite FormPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">formSubmitPageTest</p>
+            <p class="text-sm">
+              <span>5:37:54 pm</span> / <span>00:00:00:046</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:54 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:54 pm</span>
+<span class='badge badge-default'>00:00:00:046</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">FormPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:37:54 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="10"
+          author=""
+          tag="CRMAppTestRegressionSuite FormPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">formSubmitPageTest</p>
+            <p class="text-sm">
+              <span>5:37:54 pm</span> / <span>00:00:00:032</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:54 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:54 pm</span>
+<span class='badge badge-default'>00:00:00:032</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">FormPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:37:54 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="11"
+          author=""
+          tag="CRMAppTestRegressionSuite FormPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">formSubmitPageTest</p>
+            <p class="text-sm">
+              <span>5:37:54 pm</span> / <span>00:00:00:036</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:54 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:54 pm</span>
+<span class='badge badge-default'>00:00:00:036</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">FormPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:37:54 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="12"
+          author=""
+          tag="CRMAppTestRegressionSuite FormPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">formSubmitPageTest</p>
+            <p class="text-sm">
+              <span>5:37:54 pm</span> / <span>00:00:00:035</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:54 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:54 pm</span>
+<span class='badge badge-default'>00:00:00:035</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">FormPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:37:54 pm</td>
+        <td>
+          Test failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:37:55 pm</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='ui linkedin button']"}
+  (Session info: chrome=135.0.7049.43)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a712dffa3d5d0abe538c8465ecee857a, findElement {value=//button[@class='ui linkedin button'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.43, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57782/devtoo..., se:cdpVersion: 135.0.7049.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a712dffa3d5d0abe538c8465ecee857a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.qa.crm.utils.ElementUtil.getElement(ElementUtil.java:78)
+	at com.qa.crm.utils.ElementUtil.doClick(ElementUtil.java:43)
+	at com.qa.crm.pages.FormPage.addForm(FormPage.java:31)
+	at com.qa.crm.tests.FormPageTest.formSubmitPageTest(FormPageTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Dell\Downloads\Automation\AutomationFramework\workspace\SeleniumPOMTestNGFramework/screenshot/formSubmitPageTest_1744459675781.png' src="C:\Users\Dell\Downloads\Automation\AutomationFramework\workspace\SeleniumPOMTestNGFramework/screenshot/formSubmitPageTest_1744459675781.png">
+    <div class="title">formSubmitPageTest</div>
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="13"
+          author=""
+          tag="CRMAppTestRegressionSuite FormPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">formSubmitPageTest</p>
+            <p class="text-sm">
+              <span>5:37:56 pm</span> / <span>00:00:00:029</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:56 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:56 pm</span>
+<span class='badge badge-default'>00:00:00:029</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -633,10 +760,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:55 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:37:56 pm</td>
         <td>
-          Test passed
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -644,31 +771,31 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="14"
+        <li class="test-item"  status="skip" test-id="14"
           author=""
-          tag="CRMAppTestRegressionSuite ContactsPageTest"
+          tag="CRMAppTestRegressionSuite FormPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">createNewContactTest</p>
+            <p class="name">formSubmitPageTest</p>
             <p class="text-sm">
-              <span>5:21:50 pm</span> / <span>00:00:08:062</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>5:37:56 pm</span> / <span>00:00:00:092</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">createNewContactTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:50 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:21:58 pm</span>
-<span class='badge badge-default'>00:00:08:062</span>
+<h5 class="test-status text-skip">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:56 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:56 pm</span>
+<span class='badge badge-default'>00:00:00:092</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
-<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
+<span class="badge badge-pill badge-default">FormPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -676,10 +803,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:21:58 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:37:56 pm</td>
         <td>
-          Test passed
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -687,25 +814,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="15"
+        <li class="test-item"  status="skip" test-id="15"
           author=""
           tag="CRMAppTestRegressionSuite FormPageTest"
           device="">
           <div class="test-detail">
             <p class="name">formSubmitPageTest</p>
             <p class="text-sm">
-              <span>5:21:56 pm</span> / <span>00:00:12:890</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>5:37:56 pm</span> / <span>00:00:00:044</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">formSubmitPageTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:56 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:22:08 pm</span>
-<span class='badge badge-default'>00:00:12:890</span>
+<h5 class="test-status text-skip">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:56 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:56 pm</span>
+<span class='badge badge-default'>00:00:00:044</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -719,10 +846,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:22:08 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:37:56 pm</td>
         <td>
-          Test passed
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -730,112 +857,26 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="16"
-          author=""
-          tag="CRMAppTestRegressionSuite ContactsPageTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">createNewContactTest</p>
-            <p class="text-sm">
-              <span>5:21:58 pm</span> / <span>00:00:07:197</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">createNewContactTest</h5>
-<span class='badge badge-success'>04.12.2025 5:21:58 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:22:05 pm</span>
-<span class='badge badge-default'>00:00:07:197</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
-<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:22:05 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="17"
-          author=""
-          tag="CRMAppTestRegressionSuite ContactsPageTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">searchTest</p>
-            <p class="text-sm">
-              <span>5:22:05 pm</span> / <span>00:00:07:448</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">searchTest</h5>
-<span class='badge badge-success'>04.12.2025 5:22:05 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:22:12 pm</span>
-<span class='badge badge-default'>00:00:07:448</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
-<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:22:12 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="18"
+        <li class="test-item"  status="fail" test-id="16"
           author=""
           tag="CRMAppTestRegressionSuite FormPageTest"
           device="">
           <div class="test-detail">
             <p class="name">formSubmitPageTest</p>
             <p class="text-sm">
-              <span>5:22:08 pm</span> / <span>00:00:12:713</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>5:37:57 pm</span> / <span>00:00:00:038</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">formSubmitPageTest</h5>
-<span class='badge badge-success'>04.12.2025 5:22:08 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:22:21 pm</span>
-<span class='badge badge-default'>00:00:12:713</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<h5 class="test-status text-fail">formSubmitPageTest</h5>
+<span class='badge badge-success'>04.12.2025 5:37:57 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:37:57 pm</span>
+<span class='badge badge-default'>00:00:00:038</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -848,8 +889,154 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:37:57 pm</td>
+        <td>
+          Test failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:37:57 pm</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='ui linkedin button']"}
+  (Session info: chrome=135.0.7049.43)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a712dffa3d5d0abe538c8465ecee857a, findElement {value=//button[@class='ui linkedin button'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.43, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57782/devtoo..., se:cdpVersion: 135.0.7049.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a712dffa3d5d0abe538c8465ecee857a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.qa.crm.utils.ElementUtil.getElement(ElementUtil.java:78)
+	at com.qa.crm.utils.ElementUtil.doClick(ElementUtil.java:43)
+	at com.qa.crm.pages.FormPage.addForm(FormPage.java:31)
+	at com.qa.crm.tests.FormPageTest.formSubmitPageTest(FormPageTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Dell\Downloads\Automation\AutomationFramework\workspace\SeleniumPOMTestNGFramework/screenshot/formSubmitPageTest_1744459677767.png' src="C:\Users\Dell\Downloads\Automation\AutomationFramework\workspace\SeleniumPOMTestNGFramework/screenshot/formSubmitPageTest_1744459677767.png">
+    <div class="title">formSubmitPageTest</div>
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="HomePageTest CRMAppTestRegressionSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">homePageTitleTest</p>
+            <p class="text-sm">
+              <span>5:38:15 pm</span> / <span>00:00:00:039</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">homePageTitleTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:15 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:15 pm</span>
+<span class='badge badge-default'>00:00:00:039</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:22:21 pm</td>
+        <td>5:38:15 pm</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="HomePageTest CRMAppTestRegressionSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">isHomePageIconTest</p>
+            <p class="text-sm">
+              <span>5:38:15 pm</span> / <span>00:00:02:735</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">isHomePageIconTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:15 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:18 pm</span>
+<span class='badge badge-default'>00:00:02:735</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:38:18 pm</td>
         <td>
           Test passed
         </td>
@@ -861,12 +1048,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="19"
           author=""
-          tag="CRMAppTestRegressionSuite ContactsPageTest"
+          tag="HomePageTest CRMAppTestRegressionSuite"
           device="">
           <div class="test-detail">
-            <p class="name">searchTest</p>
+            <p class="name">isCalendarPageIconTest</p>
             <p class="text-sm">
-              <span>5:22:12 pm</span> / <span>00:00:07:681</span>
+              <span>5:38:18 pm</span> / <span>00:00:00:047</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -874,16 +1061,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">searchTest</h5>
-<span class='badge badge-success'>04.12.2025 5:22:12 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:22:20 pm</span>
-<span class='badge badge-default'>00:00:07:681</span>
+<h5 class="test-status text-pass">isCalendarPageIconTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:18 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:18 pm</span>
+<span class='badge badge-default'>00:00:00:047</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
-<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -892,7 +1079,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:22:20 pm</td>
+        <td>5:38:18 pm</td>
         <td>
           Test passed
         </td>
@@ -904,12 +1091,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="20"
           author=""
-          tag="CRMAppTestRegressionSuite ContactsPageTest"
+          tag="HomePageTest CRMAppTestRegressionSuite"
           device="">
           <div class="test-detail">
-            <p class="name">searchTest</p>
+            <p class="name">isContactsPageIconTest</p>
             <p class="text-sm">
-              <span>5:22:20 pm</span> / <span>00:00:07:551</span>
+              <span>5:38:18 pm</span> / <span>00:00:00:046</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -917,11 +1104,396 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">searchTest</h5>
-<span class='badge badge-success'>04.12.2025 5:22:20 pm</span>
-<span class='badge badge-danger'>04.12.2025 5:22:28 pm</span>
-<span class='badge badge-default'>00:00:07:551</span>
+<h5 class="test-status text-pass">isContactsPageIconTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:18 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:18 pm</span>
+<span class='badge badge-default'>00:00:00:046</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:38:18 pm</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="21"
+          author=""
+          tag="HomePageTest CRMAppTestRegressionSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">homePageHeadersCountTest</p>
+            <p class="text-sm">
+              <span>5:38:18 pm</span> / <span>00:00:00:087</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">homePageHeadersCountTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:18 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:18 pm</span>
+<span class='badge badge-default'>00:00:00:087</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:38:18 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="22"
+          author=""
+          tag="HomePageTest CRMAppTestRegressionSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">homePageHeadersCountTest</p>
+            <p class="text-sm">
+              <span>5:38:18 pm</span> / <span>00:00:00:066</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">homePageHeadersCountTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:18 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:18 pm</span>
+<span class='badge badge-default'>00:00:00:066</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:38:18 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="23"
+          author=""
+          tag="HomePageTest CRMAppTestRegressionSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">homePageHeadersCountTest</p>
+            <p class="text-sm">
+              <span>5:38:18 pm</span> / <span>00:00:00:084</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">homePageHeadersCountTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:18 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:19 pm</span>
+<span class='badge badge-default'>00:00:00:084</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:38:19 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="24"
+          author=""
+          tag="HomePageTest CRMAppTestRegressionSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">homePageHeadersCountTest</p>
+            <p class="text-sm">
+              <span>5:38:19 pm</span> / <span>00:00:00:105</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">homePageHeadersCountTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:19 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:19 pm</span>
+<span class='badge badge-default'>00:00:00:105</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:38:19 pm</td>
+        <td>
+          Test failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:38:19 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [3] but found [5]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at com.qa.crm.tests.HomePageTest.homePageHeadersCountTest(HomePageTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Dell\Downloads\Automation\AutomationFramework\workspace\SeleniumPOMTestNGFramework/screenshot/homePageHeadersCountTest_1744459699257.png' src="C:\Users\Dell\Downloads\Automation\AutomationFramework\workspace\SeleniumPOMTestNGFramework/screenshot/homePageHeadersCountTest_1744459699257.png">
+    <div class="title">homePageHeadersCountTest</div>
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="25"
+          author=""
+          tag="HomePageTest CRMAppTestRegressionSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">homePageHeadersTest</p>
+            <p class="text-sm">
+              <span>5:38:19 pm</span> / <span>00:00:00:159</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">homePageHeadersTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:19 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:19 pm</span>
+<span class='badge badge-default'>00:00:00:159</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:38:19 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="26"
+          author=""
+          tag="HomePageTest CRMAppTestRegressionSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">homePageHeadersTest</p>
+            <p class="text-sm">
+              <span>5:38:19 pm</span> / <span>00:00:00:116</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">homePageHeadersTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:19 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:19 pm</span>
+<span class='badge badge-default'>00:00:00:116</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:38:19 pm</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag="HomePageTest CRMAppTestRegressionSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">homePageHeadersTest</p>
+            <p class="text-sm">
+              <span>5:38:19 pm</span> / <span>00:00:00:060</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">homePageHeadersTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:19 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:19 pm</span>
+<span class='badge badge-default'>00:00:00:060</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomePageTest</span>
+<span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:38:19 pm</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag="CRMAppTestRegressionSuite ContactsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyContactsPageLabelTest</p>
+            <p class="text-sm">
+              <span>5:38:21 pm</span> / <span>00:00:00:065</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyContactsPageLabelTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:21 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:21 pm</span>
+<span class='badge badge-default'>00:00:00:065</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -935,7 +1507,265 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:22:28 pm</td>
+        <td>5:38:21 pm</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag="CRMAppTestRegressionSuite ContactsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">createNewContactTest</p>
+            <p class="text-sm">
+              <span>5:38:21 pm</span> / <span>00:00:07:171</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">createNewContactTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:21 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:28 pm</span>
+<span class='badge badge-default'>00:00:07:171</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:38:28 pm</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag="CRMAppTestRegressionSuite ContactsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">createNewContactTest</p>
+            <p class="text-sm">
+              <span>5:38:28 pm</span> / <span>00:00:07:384</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">createNewContactTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:28 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:36 pm</span>
+<span class='badge badge-default'>00:00:07:384</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:38:36 pm</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag="CRMAppTestRegressionSuite ContactsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">createNewContactTest</p>
+            <p class="text-sm">
+              <span>5:38:36 pm</span> / <span>00:00:07:023</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">createNewContactTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:36 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:43 pm</span>
+<span class='badge badge-default'>00:00:07:023</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:38:43 pm</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag="CRMAppTestRegressionSuite ContactsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">searchTest</p>
+            <p class="text-sm">
+              <span>5:38:43 pm</span> / <span>00:00:08:034</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:43 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:51 pm</span>
+<span class='badge badge-default'>00:00:08:034</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:38:51 pm</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag="CRMAppTestRegressionSuite ContactsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">searchTest</p>
+            <p class="text-sm">
+              <span>5:38:51 pm</span> / <span>00:00:06:965</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:51 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:38:58 pm</span>
+<span class='badge badge-default'>00:00:06:965</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:38:58 pm</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag="CRMAppTestRegressionSuite ContactsPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">searchTest</p>
+            <p class="text-sm">
+              <span>5:38:58 pm</span> / <span>00:00:07:189</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>04.12.2025 5:38:58 pm</span>
+<span class='badge badge-danger'>04.12.2025 5:39:05 pm</span>
+<span class='badge badge-default'>00:00:07:189</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CRMAppTestRegressionSuite</span>
+<span class="badge badge-pill badge-default">ContactsPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:39:05 pm</td>
         <td>
           Test passed
         </td>
@@ -954,7 +1784,103 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:38:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>homePageHeadersCountTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:37:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:37:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:37:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>formSubmitPageTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -965,15 +1891,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>20</span>
+<span class='badge log pass-bg'>7</span>
 </span>
-<p class="name">CRMAppTestRegressionSuite</p>
-<p class="duration text-sm">20 tests</p>
+<p class="name">ContactsPageTest</p>
+<p class="duration text-sm">7 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>CRMAppTestRegressionSuite</h4>
-<span status="pass" class='badge log pass-bg'>20 passed</span>
+<h4>ContactsPageTest</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -986,189 +1912,51 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:31 pm</td>
+<td>17:38:21 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>homePageTitleTest</a>
+<a href="#" class="linked" test-id='28' id='28'>verifyContactsPageLabelTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:31 pm</td>
+<td>17:38:21 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>bellIconExist</a>
+<a href="#" class="linked" test-id='29' id='29'>createNewContactTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:32 pm</td>
+<td>17:38:28 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>isHomePageIconTest</a>
+<a href="#" class="linked" test-id='30' id='30'>createNewContactTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:32 pm</td>
+<td>17:38:36 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>loginPageTitleTest</a>
+<a href="#" class="linked" test-id='31' id='31'>createNewContactTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:32 pm</td>
+<td>17:38:43 pm</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>loginPageURLTest</a>
+<a href="#" class="linked" test-id='32' id='32'>searchTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:32 pm</td>
+<td>17:38:51 pm</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>loginTest</a>
+<a href="#" class="linked" test-id='33' id='33'>searchTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:34 pm</td>
+<td>17:38:58 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'>isCalendarPageIconTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:34 pm</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>isContactsPageIconTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:34 pm</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>homePageHeadersCountTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:34 pm</td>
-<td>
-<a href="#" class="linked" test-id='10' id='10'>homePageHeadersTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:38 pm</td>
-<td>
-<a href="#" class="linked" test-id='11' id='11'>verifyContactsPageLabelTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:41 pm</td>
-<td>
-<a href="#" class="linked" test-id='12' id='12'>createNewContactTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:41 pm</td>
-<td>
-<a href="#" class="linked" test-id='13' id='13'>formSubmitPageTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:50 pm</td>
-<td>
-<a href="#" class="linked" test-id='14' id='14'>createNewContactTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:56 pm</td>
-<td>
-<a href="#" class="linked" test-id='15' id='15'>formSubmitPageTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:58 pm</td>
-<td>
-<a href="#" class="linked" test-id='16' id='16'>createNewContactTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:22:05 pm</td>
-<td>
-<a href="#" class="linked" test-id='17' id='17'>searchTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:22:08 pm</td>
-<td>
-<a href="#" class="linked" test-id='18' id='18'>formSubmitPageTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:22:12 pm</td>
-<td>
-<a href="#" class="linked" test-id='19' id='19'>searchTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:22:20 pm</td>
-<td>
-<a href="#" class="linked" test-id='20' id='20'>searchTest</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>3</span>
-</span>
-<p class="name">FormPageTest</p>
-<p class="duration text-sm">3 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>FormPageTest</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:41 pm</td>
-<td>
-<a href="#" class="linked" test-id='13' id='13'>formSubmitPageTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:56 pm</td>
-<td>
-<a href="#" class="linked" test-id='15' id='15'>formSubmitPageTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:22:08 pm</td>
-<td>
-<a href="#" class="linked" test-id='18' id='18'>formSubmitPageTest</a>
+<a href="#" class="linked" test-id='34' id='34'>searchTest</a>
 </td>
 </tr>
 </tbody>
@@ -1199,30 +1987,30 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:31 pm</td>
+<td>17:37:47 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>bellIconExist</a>
+<a href="#" class="linked" test-id='1' id='1'>bellIconExist</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:32 pm</td>
+<td>17:37:48 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>loginPageTitleTest</a>
+<a href="#" class="linked" test-id='2' id='2'>loginPageTitleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:32 pm</td>
+<td>17:37:48 pm</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>loginPageURLTest</a>
+<a href="#" class="linked" test-id='3' id='3'>loginPageURLTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:32 pm</td>
+<td>17:37:48 pm</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>loginTest</a>
+<a href="#" class="linked" test-id='4' id='4'>loginTest</a>
 </td>
 </tr>
 </tbody>
@@ -1232,15 +2020,19 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>6</span>
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>5</span>
 </span>
 <p class="name">HomePageTest</p>
-<p class="duration text-sm">6 tests</p>
+<p class="duration text-sm">11 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>HomePageTest</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>5 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1253,44 +2045,79 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:31 pm</td>
+<td>17:38:15 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>homePageTitleTest</a>
+<a href="#" class="linked" test-id='17' id='17'>homePageTitleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:32 pm</td>
+<td>17:38:15 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>isHomePageIconTest</a>
+<a href="#" class="linked" test-id='18' id='18'>isHomePageIconTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:34 pm</td>
+<td>17:38:18 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'>isCalendarPageIconTest</a>
+<a href="#" class="linked" test-id='19' id='19'>isCalendarPageIconTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:34 pm</td>
+<td>17:38:18 pm</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>isContactsPageIconTest</a>
+<a href="#" class="linked" test-id='20' id='20'>isContactsPageIconTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:38:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>homePageHeadersCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:38:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>homePageHeadersCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:38:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>homePageHeadersCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:38:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>homePageHeadersCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:38:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>homePageHeadersTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:38:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>homePageHeadersTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:34 pm</td>
+<td>17:38:19 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'>homePageHeadersCountTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:34 pm</td>
-<td>
-<a href="#" class="linked" test-id='10' id='10'>homePageHeadersTest</a>
+<a href="#" class="linked" test-id='27' id='27'>homePageHeadersTest</a>
 </td>
 </tr>
 </tbody>
@@ -1300,15 +2127,131 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>7</span>
+<span class='badge log badge-danger'>3</span>
+<span class='badge log badge-skip'>9</span>
 </span>
-<p class="name">ContactsPageTest</p>
-<p class="duration text-sm">7 tests</p>
+<p class="name">FormPageTest</p>
+<p class="duration text-sm">12 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>ContactsPageTest</h4>
-<span status="pass" class='badge log pass-bg'>7 passed</span>
+<h4>FormPageTest</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+<span status="skip" class='badge log badge-skip'>9 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:37:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:37:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:37:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>formSubmitPageTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>16</span>
+<span class='badge log badge-danger'>4</span>
+<span class='badge log badge-skip'>14</span>
+</span>
+<p class="name">CRMAppTestRegressionSuite</p>
+<p class="duration text-sm">34 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>CRMAppTestRegressionSuite</h4>
+<span status="pass" class='badge log pass-bg'>16 passed</span>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+<span status="skip" class='badge log badge-skip'>14 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1321,51 +2264,240 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:38 pm</td>
+<td>17:37:47 pm</td>
 <td>
-<a href="#" class="linked" test-id='11' id='11'>verifyContactsPageLabelTest</a>
+<a href="#" class="linked" test-id='1' id='1'>bellIconExist</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:41 pm</td>
+<td>17:37:48 pm</td>
 <td>
-<a href="#" class="linked" test-id='12' id='12'>createNewContactTest</a>
+<a href="#" class="linked" test-id='2' id='2'>loginPageTitleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:50 pm</td>
+<td>17:37:48 pm</td>
 <td>
-<a href="#" class="linked" test-id='14' id='14'>createNewContactTest</a>
+<a href="#" class="linked" test-id='3' id='3'>loginPageURLTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:21:58 pm</td>
+<td>17:37:48 pm</td>
 <td>
-<a href="#" class="linked" test-id='16' id='16'>createNewContactTest</a>
+<a href="#" class="linked" test-id='4' id='4'>loginTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:37:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:37:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:37:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>formSubmitPageTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:37:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>formSubmitPageTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:22:05 pm</td>
+<td>17:38:15 pm</td>
 <td>
-<a href="#" class="linked" test-id='17' id='17'>searchTest</a>
+<a href="#" class="linked" test-id='17' id='17'>homePageTitleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:22:12 pm</td>
+<td>17:38:15 pm</td>
 <td>
-<a href="#" class="linked" test-id='19' id='19'>searchTest</a>
+<a href="#" class="linked" test-id='18' id='18'>isHomePageIconTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:22:20 pm</td>
+<td>17:38:18 pm</td>
 <td>
-<a href="#" class="linked" test-id='20' id='20'>searchTest</a>
+<a href="#" class="linked" test-id='19' id='19'>isCalendarPageIconTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:38:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>isContactsPageIconTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:38:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>homePageHeadersCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:38:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>homePageHeadersCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:38:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>homePageHeadersCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:38:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>homePageHeadersCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:38:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>homePageHeadersTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>17:38:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>homePageHeadersTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:38:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>homePageHeadersTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:38:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>verifyContactsPageLabelTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:38:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>createNewContactTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:38:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>createNewContactTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:38:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>createNewContactTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:38:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:38:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:38:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='34' id='34'>searchTest</a>
 </td>
 </tr>
 </tbody>
@@ -1385,25 +2517,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 12, 2025 05:20:57 pm</h3>
+<h3>Apr 12, 2025 05:36:33 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 12, 2025 05:22:28 pm</h3>
+<h3>Apr 12, 2025 05:39:05 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>20</h3>
+<h3>16</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>4</h3>
 </div></div>
 </div>
 </div>
@@ -1419,13 +2551,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>20</b> tests passed
+<div><small data-tooltip='47%'>
+<b>16</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='11%'><b>4</b> tests failed,
+<b>14</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -1442,10 +2574,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>20</b> events passed</small></div>
+<div><small data-tooltip='42%'><b>16</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>0</b> others
+<small data-tooltip='21%'><b>8</b> events failed,
+<b data-tooltip='%'>14</b> others
 </small>
 </div>
 </div>
@@ -1461,7 +2593,7 @@
 </div></div>
 <script>
 var timeline = {
-"homePageTitleTest":0.262,"bellIconExist":0.483,"isHomePageIconTest":2.146,"loginPageTitleTest":0.08,"loginPageURLTest":0.056,"loginTest":1.006,"isCalendarPageIconTest":0.145,"isContactsPageIconTest":0.051,"homePageHeadersCountTest":0.065,"homePageHeadersTest":0.193,"verifyContactsPageLabelTest":0.138,"createNewContactTest":8.381,"formSubmitPageTest":14.335,"createNewContactTest":8.062,"formSubmitPageTest":12.89,"createNewContactTest":7.197,"searchTest":7.448,"formSubmitPageTest":12.713,"searchTest":7.681,"searchTest":7.551
+"bellIconExist":0.512,"loginPageTitleTest":0.093,"loginPageURLTest":0.19,"loginTest":1.472,"formSubmitPageTest":1.538,"formSubmitPageTest":0.046,"formSubmitPageTest":0.026,"formSubmitPageTest":0.03,"formSubmitPageTest":0.046,"formSubmitPageTest":0.032,"formSubmitPageTest":0.036,"formSubmitPageTest":0.035,"formSubmitPageTest":0.029,"formSubmitPageTest":0.092,"formSubmitPageTest":0.044,"formSubmitPageTest":0.038,"homePageTitleTest":0.039,"isHomePageIconTest":2.735,"isCalendarPageIconTest":0.047,"isContactsPageIconTest":0.046,"homePageHeadersCountTest":0.087,"homePageHeadersCountTest":0.066,"homePageHeadersCountTest":0.084,"homePageHeadersCountTest":0.105,"homePageHeadersTest":0.159,"homePageHeadersTest":0.116,"homePageHeadersTest":0.06,"verifyContactsPageLabelTest":0.065,"createNewContactTest":7.171,"createNewContactTest":7.384,"createNewContactTest":7.023,"searchTest":8.034,"searchTest":6.965,"searchTest":7.189
 };
 </script>
 <div class="row">
@@ -1471,16 +2603,8 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>CRMAppTestRegressionSuite</td>
-<td>20</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>FormPageTest</td>
-<td>3</td>
+<td>ContactsPageTest</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1496,19 +2620,27 @@ var timeline = {
 </tr>
 <tr>
 <td>HomePageTest</td>
-<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>45.455%</td>
 </tr>
 <tr>
-<td>ContactsPageTest</td>
-<td>7</td>
+<td>FormPageTest</td>
 <td>0</td>
+<td>3</td>
+<td>9</td>
 <td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>CRMAppTestRegressionSuite</td>
+<td>16</td>
+<td>4</td>
+<td>14</td>
 <td>0</td>
-<td>100%</td>
+<td>47.059%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1549,10 +2681,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 20,
-failParent: 0,
+passParent: 16,
+failParent: 4,
 warningParent: 0,
-skipParent: 0,
+skipParent: 14,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -1566,10 +2698,10 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 20,
-failEvents: 0,
+passEvents: 16,
+failEvents: 8,
 warningEvents: 0,
-skipEvents: 0,
+skipEvents: 14,
 infoEvents: 0
 };
 </script>        </div>
