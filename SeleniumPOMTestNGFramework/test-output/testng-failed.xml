@@ -6,17 +6,17 @@
     <listener class-name="com.qa.crm.listeners.TestAllureListener"/>
     <listener class-name="com.qa.crm.listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="4" parallel="tests" name="Contacts Page Test(failed)" verbose="4">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="4" parallel="tests" name="Home Page Test(failed)" verbose="4">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.qa.crm.tests.ContactsPageTest">
+      <class name="com.qa.crm.tests.HomePageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="searchTest" invocation-numbers="1"/>
-          <include name="setup"/>
           <include name="homeSetup"/>
+          <include name="setup"/>
+          <include name="homePageHeadersCountTest"/>
         </methods>
-      </class> <!-- com.qa.crm.tests.ContactsPageTest -->
+      </class> <!-- com.qa.crm.tests.HomePageTest -->
     </classes>
-  </test> <!-- Contacts Page Test(failed) -->
+  </test> <!-- Home Page Test(failed) -->
 </suite> <!-- Failed suite [CRM App Test Regression Suite] -->
