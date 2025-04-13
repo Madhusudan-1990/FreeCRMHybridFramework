@@ -6,6 +6,49 @@
     <listener class-name="com.qa.crm.listeners.TestAllureListener"/>
     <listener class-name="com.qa.crm.listeners.AnnotationTransformer"/>
   </listeners>
+  <test thread-count="4" parallel="tests" name="Login Page Test(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.crm.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="bellIconExist"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginPageURLTest"/>
+          <include name="setup"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.qa.crm.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test(failed) -->
+  <test thread-count="4" parallel="tests" name="Contacts Page Test(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.crm.tests.ContactsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createNewContactTest"/>
+          <include name="searchTest"/>
+          <include name="verifyContactsPageLabelTest"/>
+          <include name="setup"/>
+          <include name="homeSetup"/>
+        </methods>
+      </class> <!-- com.qa.crm.tests.ContactsPageTest -->
+    </classes>
+  </test> <!-- Contacts Page Test(failed) -->
+  <test thread-count="4" parallel="tests" name="Forms Page Test(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.crm.tests.FormPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="formSetup"/>
+          <include name="formSubmitPageTest"/>
+        </methods>
+      </class> <!-- com.qa.crm.tests.FormPageTest -->
+    </classes>
+  </test> <!-- Forms Page Test(failed) -->
   <test thread-count="4" parallel="tests" name="Home Page Test(failed)" verbose="4">
     <parameter name="browser" value="firefox"/>
     <classes>
@@ -13,7 +56,12 @@
         <methods>
           <include name="tearDown"/>
           <include name="homeSetup"/>
+          <include name="isCalendarPageIconTest"/>
+          <include name="homePageHeadersTest"/>
+          <include name="isHomePageIconTest"/>
+          <include name="isContactsPageIconTest"/>
           <include name="setup"/>
+          <include name="homePageTitleTest"/>
           <include name="homePageHeadersCountTest"/>
         </methods>
       </class> <!-- com.qa.crm.tests.HomePageTest -->
