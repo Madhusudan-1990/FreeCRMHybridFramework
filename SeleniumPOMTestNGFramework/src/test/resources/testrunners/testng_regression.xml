@@ -7,7 +7,7 @@
   	<listener class-name="com.qa.crm.listeners.AnnotationTransformer"/>
   </listeners>
   <test name="Login Page Test">
-  	<parameter name="browser" value="edge"></parameter>
+  	<parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.qa.crm.tests.LoginPageTest"/>
     </classes>
