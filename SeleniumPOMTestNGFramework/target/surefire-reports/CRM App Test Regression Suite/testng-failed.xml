@@ -13,8 +13,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="formSubmitPageTest" invocation-numbers="0 1 2"/>
           <include name="formSetup"/>
+          <include name="formSubmitPageTest" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.qa.crm.tests.FormPageTest -->
     </classes>

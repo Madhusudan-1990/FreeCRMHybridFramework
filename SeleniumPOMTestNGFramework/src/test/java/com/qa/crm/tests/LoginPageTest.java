@@ -65,7 +65,7 @@ public class LoginPageTest extends BaseTest
 	@Issue("JiraTicket - SUP100202")
 	public void loginTest()
 	{
-		homePage = loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
+		homePage = loginPage.doLogin(prop.getProperty("username"),System.getProperty("password"));
 		Assert.assertEquals(homePage.getHomePageTitle(),AppConstants.LOGIN_PAGE_TITLE);
 	}
 }
