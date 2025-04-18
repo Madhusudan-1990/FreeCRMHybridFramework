@@ -20,9 +20,9 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 @Listeners({AnnotationTransformer.class,ExtentReportListener.class})
-@Epic("Epic SUP100 : Design CRM Login Page")
-@Feature("Feature SUP101 : Login Feature")
-@Story("Story SUP102 : All features related to login page")
+@Epic("Epic SUP-100 : Design CRM Login Page")
+@Feature("Feature SUP-101 : Login Feature")
+@Story("Story SUP-102 : All features related to login page")
 @Owner("Madhusudan Jayasimha")
 @Link(name = "Login Page",url="https://ui.cogmento.com/")
 public class LoginPageTest extends BaseTest
